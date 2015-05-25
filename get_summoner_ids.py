@@ -1,6 +1,9 @@
 import json
 from riotwatcher import LoLException, RiotWatcher
 
+report_freq = 100
+
+
 def match_id_to_summoner_ids(riot, match_id):
     riot.wait()
     try:
@@ -19,7 +22,7 @@ def summoner_id_to_match_ids(riot, summoner_id):
         print('LoLException: '+str(e)+', in summoner_id_to_match_ids with summoner_id = '+str(summoner_id))
         return []
 
-def obtain_summoner_ids(riot, n, initial_summoner_id):
+def get_summoner_ids(riot, n, initial_summoner_id):
     summoner_ids = set()
     match_ids = set()
     pending_summoner_ids = [initial_summoner_id]
@@ -37,8 +40,8 @@ def obtain_summoner_ids(riot, n, initial_summoner_id):
             for s_id in match_id_to_summoner_ids(riot, m_id):
                 if s_id not in summoner_ids:
                     summoner_ids.add(s_id)
-                    if len(summoner_ids)%100==0:
-                        print(len(summoner_ids))
+                    if len(summoner_ids)%report_freq==0:
+                        print(str(len(summoner_ids))+' done')
                     pending_summoner_ids.append(s_id)
             if len(summoner_ids) > n:
                 break
@@ -46,7 +49,7 @@ def obtain_summoner_ids(riot, n, initial_summoner_id):
     return summoner_ids
 
 def store_summoner_ids(filename, riot, n, initial_summoner_id):
-    summoner_ids = list(obtain_summoner_ids(riot, n, initial_summoner_id))
+    summoner_ids = list(get_summoner_ids(riot, n, initial_summoner_id))
     f = open(filename, 'w')
     json.dump(summoner_ids,f)
     f.close()
@@ -58,4 +61,4 @@ if __name__ == '__main__':
     key = json.load(f)
     f.close()
     riot = RiotWatcher(key)
-    store_summoner_ids('test', riot, 20, 30890339)
+    store_summoner_ids('test_get_summoner_ids', riot, 20, 30890339)
