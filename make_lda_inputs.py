@@ -24,15 +24,23 @@ def dict_to_inputs(summoners_to_stats:dict):
     vocab = tuple(id_to_name[str(i)] for i in ids)
     return X, vocab
 
+def fromfile(filename):
+    with open(filename, 'r') as f:
+        return json.load(f)
 
 if __name__ == '__main__':
-    with open('test_get_champions_usage') as f:
-        summoners_to_stats = json.load(f)
+    # with open('test_get_champions_usage') as f:
+    #     summoners_to_stats = json.load(f)
+    d = dict()
+    for i in range(7,10):
+        d.update(fromfile('data/champions_usage_plat_'+str(i)))
+    summoners_to_stats = d
+
     X, vocab = dict_to_inputs(summoners_to_stats)
     # for i in range(0, len(summoners_to_stats)-1):
     #     print(X[i])
     # np.savetxt("champ_usage_test.csv", X, delimiter="," )
-    model = lda.LDA(n_topics=10, n_iter=100, random_state=1)
+    model = lda.LDA(n_topics=5, n_iter=1000, random_state=1)
     model.fit(X)
     topic_word = model.topic_word_
     n_top_words = 10

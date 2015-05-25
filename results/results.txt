@@ -1,0 +1,18 @@
+champions_usage_plat_7-9, 100 iter
+Topic 0: Vi Leona Wukong Sejuani Jarvan IV Nautilus Amumu Volibear Xin Zhao
+Topic 1: Thresh Janna Morgana Nami Leona Blitzcrank Nautilus Lulu Braum
+Topic 2: Jinx Vayne Kalista Caitlyn Tristana Sivir Ashe Lucian Graves
+Topic 3: Ahri LeBlanc Zed Katarina Orianna Lissandra Xerath Cassiopeia Azir
+Topic 4: Fiddlesticks Shaco Blitzcrank Vel'Koz Fiora Malzahar Brand Heimerdinger Tryndamere
+Topic 5: Irelia Sion Hecarim Gnar Vladimir Renekton Diana Maokai Cho'Gath
+Topic 6: Annie Pantheon Caitlyn Draven Zyra Lux Jax Warwick Malphite
+Topic 7: Lee Sin Nidalee Rek'Sai Gragas Jarvan IV Vi Kha'Zix Thresh Evelynn
+Topic 8: Riven Rengar Yasuo Udyr Zed Talon Lee Sin Thresh Vayne
+Topic 9: Graves Lucian Sivir Corki Ezreal Caitlyn Jinx Kalista Thresh
+
+champions_usage_plat_7-9, 100 iter
+Topic 0: Thresh Janna Morgana Leona Blitzcrank Nami Nautilus Lulu Braum
+Topic 1: Ahri Riven Lee Sin Zed LeBlanc Nidalee Rengar Yasuo Katarina
+Topic 2: Annie Nasus Swain Lux Diana Malphite Katarina Fiora Vladimir
+Topic 3: Vi Jarvan IV Irelia Rek'Sai Hecarim Sion Wukong Gragas Sejuani
+Topic 4: Graves Jinx Lucian Vayne Kalista Caitlyn Sivir Ezreal Corki
