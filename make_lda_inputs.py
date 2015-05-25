@@ -26,16 +26,16 @@ def dict_to_inputs(summoners_to_stats:dict):
 
 
 if __name__ == '__main__':
-    with open('test_get_champions_usage') as f:
+    with open('champions_usage') as f:
         summoners_to_stats = json.load(f)
     X, vocab = dict_to_inputs(summoners_to_stats)
     # for i in range(0, len(summoners_to_stats)-1):
     #     print(X[i])
     # np.savetxt("champ_usage_test.csv", X, delimiter="," )
-    model = lda.LDA(n_topics=10, n_iter=100, random_state=1)
+    model = lda.LDA(n_topics=5, n_iter=1000, random_state=1)
     model.fit(X)
     topic_word = model.topic_word_
-    n_top_words = 10
+    n_top_words = 20
     for i, topic_dist in enumerate(topic_word):
         topic_words = np.array(vocab)[np.argsort(topic_dist)][:-n_top_words:-1]
         print('Topic {}: {}'.format(i, ' '.join(topic_words)))
