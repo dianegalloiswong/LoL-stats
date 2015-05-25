@@ -32,7 +32,7 @@ if __name__ == '__main__':
     # with open('test_get_champions_usage') as f:
     #     summoners_to_stats = json.load(f)
     d = dict()
-    for i in range(7,10):
+    for i in list(range(5))+list(range(7,10)):
         d.update(fromfile('data/champions_usage_plat_'+str(i)))
     summoners_to_stats = d
 
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # for i in range(0, len(summoners_to_stats)-1):
     #     print(X[i])
     # np.savetxt("champ_usage_test.csv", X, delimiter="," )
-    model = lda.LDA(n_topics=5, n_iter=1000, random_state=1)
+    model = lda.LDA(n_topics=4, n_iter=100, random_state=1)
     model.fit(X)
     topic_word = model.topic_word_
     n_top_words = 20

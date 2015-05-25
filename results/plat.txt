@@ -1,4 +1,4 @@
-champions_usage_plat_7-9, 100 iter
+champions_usage_plat_7-9, 100 iter         -4500000
 Topic 0: Vi Leona Wukong Sejuani Jarvan IV Nautilus Amumu Volibear Xin Zhao
 Topic 1: Thresh Janna Morgana Nami Leona Blitzcrank Nautilus Lulu Braum
 Topic 2: Jinx Vayne Kalista Caitlyn Tristana Sivir Ashe Lucian Graves
@@ -10,9 +10,29 @@ Topic 7: Lee Sin Nidalee Rek'Sai Gragas Jarvan IV Vi Kha'Zix Thresh Evelynn
 Topic 8: Riven Rengar Yasuo Udyr Zed Talon Lee Sin Thresh Vayne
 Topic 9: Graves Lucian Sivir Corki Ezreal Caitlyn Jinx Kalista Thresh
 
-champions_usage_plat_7-9, 100 iter
+champions_usage_plat_7-9, 100 iter         -4500000
 Topic 0: Thresh Janna Morgana Leona Blitzcrank Nami Nautilus Lulu Braum
 Topic 1: Ahri Riven Lee Sin Zed LeBlanc Nidalee Rengar Yasuo Katarina
 Topic 2: Annie Nasus Swain Lux Diana Malphite Katarina Fiora Vladimir
 Topic 3: Vi Jarvan IV Irelia Rek'Sai Hecarim Sion Wukong Gragas Sejuani
 Topic 4: Graves Jinx Lucian Vayne Kalista Caitlyn Sivir Ezreal Corki
+
+champions_usage_plat_0-9\6, 100 iter        -12047067
+Topic 0: Ahri LeBlanc Zed Orianna Lissandra Xerath Cassiopeia Katarina Azir Yasuo Diana Kassadin Fizz Vladimir Viktor Twisted Fate Ezreal Nidalee Lux
+Topic 1: Vi Jarvan IV Irelia Hecarim Sion Rek'Sai Nasus Pantheon Vladimir Sejuani Amumu Cho'Gath Maokai Gragas Shaco Wukong Fiddlesticks Gnar Malphite
+Topic 2: Lee Sin Riven Rengar Nidalee Katarina Yasuo Zed Udyr Thresh Kha'Zix Wukong Vi Jarvan IV Fizz Rek'Sai Fiora Vayne Master Yi Irelia
+Topic 3: Graves Jinx Lucian Vayne Kalista Caitlyn Sivir Ezreal Corki Draven Tristana Ashe Thresh Kog'Maw Gnar Twitch Irelia Lee Sin Vi
+Topic 4: Thresh Janna Leona Morgana Nami Blitzcrank Annie Braum Nautilus Lulu Sona Bard Alistar Zyra Maokai Caitlyn Amumu Soraka Vel'Koz
+
+champions_usage_plat_0-9\6, 1000 iter        -11981505
+Topic 0: Thresh Janna Leona Morgana Nami Nautilus Blitzcrank Braum Lulu Annie Bard Sona Maokai Alistar Amumu Vi Caitlyn Sejuani Jarvan IV
+Topic 1: Nasus Wukong Annie Shaco Pantheon Fiddlesticks Cho'Gath Amumu Vladimir Malphite Swain Blitzcrank Malzahar Fiora Tryndamere Evelynn Xin Zhao Leona Master Yi
+Topic 2: Graves Jinx Vayne Lucian Kalista Caitlyn Sivir Ezreal Corki Draven Tristana Ashe Thresh Kog'Maw Lee Sin Twitch Ahri Orianna Irelia
+Topic 3: Lee Sin Riven Rengar Vi Irelia Jarvan IV Rek'Sai Hecarim Gnar Sion Gragas Maokai Fizz Nidalee Renekton Udyr Sejuani Kha'Zix Rumble
+Topic 4: Ahri Zed LeBlanc Katarina Yasuo Nidalee Orianna Xerath Lissandra Cassiopeia Azir Lee Sin Diana Kassadin Fizz Ezreal Twisted Fate Viktor Vladimir
+
+champions_usage_plat_0-9\6, 100 iter        -12007112
+Topic 0: Thresh Janna Morgana Leona Blitzcrank Annie Nami Nautilus Braum Lulu Fiddlesticks Sona Bard Amumu Caitlyn Lux Maokai Alistar Zyra
+Topic 1: Graves Jinx Lucian Vayne Kalista Caitlyn Sivir Ezreal Corki Draven Tristana Ashe Thresh Kog'Maw Gnar Ahri Orianna Varus Twitch
+Topic 2: Lee Sin Ahri Riven Zed LeBlanc Nidalee Rengar Katarina Yasuo Xerath Orianna Lissandra Cassiopeia Thresh Fizz Azir Ezreal Irelia Diana
+Topic 3: Vi Jarvan IV Irelia Wukong Rek'Sai Hecarim Nasus Sion Vladimir Pantheon Sejuani Shaco Cho'Gath Udyr Gragas Maokai Amumu Malphite Gnar
