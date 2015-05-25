@@ -4,6 +4,9 @@ from collections import deque
 import time
 import requests
 
+
+
+
 # Constants
 BRAZIL = 'br'
 EUROPE_NORDIC_EAST = 'eune'
@@ -15,6 +18,8 @@ NORTH_AMERICA = 'na'
 OCEANIA = 'oce'
 RUSSIA = 'ru'
 TURKEY = 'tr'
+
+my_default_region = EUROPE_WEST
 
 # Platforms
 platforms = {
@@ -209,7 +214,7 @@ class RateLimit:
 
 
 class RiotWatcher:
-    def __init__(self, key, default_region=EUROPE_WEST, limits=(RateLimit(10, 10), RateLimit(500, 600), )):
+    def __init__(self, key, default_region=my_default_region, limits=(RateLimit(10, 10), RateLimit(500, 600), )):
         self.key = key
         self.default_region = default_region
         self.limits = limits
@@ -219,6 +224,13 @@ class RiotWatcher:
             if not lim.request_available():
                 return False
         return True
+
+    # custom
+    def wait(self):
+        while not self.can_make_request():
+            time.sleep(1)
+
+#####################
 
     def base_request(self, url, region, static=False, **kwargs):
         if region is None:
