@@ -36,3 +36,51 @@ Topic 0: Thresh Janna Morgana Leona Blitzcrank Annie Nami Nautilus Braum Lulu Fi
 Topic 1: Graves Jinx Lucian Vayne Kalista Caitlyn Sivir Ezreal Corki Draven Tristana Ashe Thresh Kog'Maw Gnar Ahri Orianna Varus Twitch
 Topic 2: Lee Sin Ahri Riven Zed LeBlanc Nidalee Rengar Katarina Yasuo Xerath Orianna Lissandra Cassiopeia Thresh Fizz Azir Ezreal Irelia Diana
 Topic 3: Vi Jarvan IV Irelia Wukong Rek'Sai Hecarim Nasus Sion Vladimir Pantheon Sejuani Shaco Cho'Gath Udyr Gragas Maokai Amumu Malphite Gnar
+
+
+champions_usage_plat_0-9\6, 100 iter        -11868338
+Topic 0: Ahri Zed LeBlanc Katarina Yasuo Orianna Cassiopeia Azir Xerath Lissandra Kassadin Vladimir Syndra Diana Lux Ezreal Talon Viktor Fizz
+Topic 1: Thresh Udyr Morgana Braum Blitzcrank Nautilus Maokai Leona Janna Alistar Bard Jarvan IV Sion Orianna Gnar Xerath Vi Lee Sin Dr. Mundo
+Topic 2: Riven Rengar Yasuo Zed Kha'Zix Irelia Lee Sin Jax Graves Vayne Gnar Nidalee Annie Renekton Katarina Udyr Lucian Master Yi Nasus
+Topic 3: Vayne Shaco Draven Twitch Ezreal Blitzcrank Yasuo Caitlyn Katarina Master Yi Lucian Ashe Graves Udyr Fizz Zed Lee Sin Kalista Jarvan IV
+Topic 4: Leona Blitzcrank Annie Nautilus Braum Bard Alistar Morgana Amumu Malphite Rammus Thresh Sejuani Shen Cho'Gath Janna Volibear Caitlyn Maokai
+Topic 5: Swain Vel'Koz Xerath Malzahar Viktor Anivia Heimerdinger Brand Ziggs Cho'Gath Kayle Karthus Lux Mordekaiser Karma Veigar Darius Ashe Nocturne
+Topic 6: Nasus Amumu Fiora Tryndamere Master Yi Jax Malphite Warwick Lux Vladimir Garen Gangplank Teemo Katarina Udyr Singed Poppy Ashe Ezreal
+Topic 7: Janna Morgana Nami Lulu Sona Zyra Soraka Caitlyn Karma Lux Leona Orianna Ahri Annie Braum Sivir Syndra Lissandra Malphite
+Topic 8: Pantheon Fiddlesticks Evelynn Talon Xin Zhao Quinn Varus Nunu Skarner Taric Miss Fortune Aatrox Akali Ashe Malphite Darius Trundle Volibear Shen
+Topic 9: Irelia Gnar Sion Vladimir Maokai Rumble Hecarim Kennen Shyvana Shen Jax Gragas Lulu Olaf Lissandra Jayce Renekton Nautilus Cassiopeia
+Topic 10: Lee Sin Nidalee Zed Twisted Fate Ezreal Gragas Blitzcrank Thresh Jarvan IV LeBlanc Ahri Yasuo Fizz Graves Lucian Vi Kha'Zix Rengar Rek'Sai
+Topic 11: Fizz Cho'Gath Hecarim Diana Renekton Lissandra Kassadin Jarvan IV Irelia Annie Vi Malphite Morgana Leona Jax Vladimir Graves Ahri Maokai
+Topic 12: Vi Rek'Sai Jarvan IV Wukong Sejuani Gragas Volibear Nautilus Kha'Zix Zac Amumu Nunu Maokai Pantheon Hecarim Rengar Nocturne Xin Zhao Shyvana
+Topic 13: Jinx Kalista Sivir Tristana Ashe Vayne Caitlyn Graves Kog'Maw Lucian Corki Annie Cassiopeia Ezreal Urgot Twitch Varus Morgana Gnar
+Topic 14: Graves Lucian Caitlyn Ezreal Corki Sivir Jinx Vayne Tristana Ahri Jarvan IV Orianna Vi Thresh Kalista Janna Lissandra Morgana Irelia
+
+
+champions_usage_plat_0-9\6, 100 iter        -11578919
+Topic 0: Fiddlesticks Vel'Koz Zyra Karma Miss Fortune Malphite Soraka Lux Syndra Sona Galio Blitzcrank Ziggs Caitlyn Jayce Brand Lissandra Skarner Elise
+Topic 1: Ahri LeBlanc Orianna Lissandra Xerath Syndra Zed Graves Caitlyn Ziggs Morgana Ezreal Lulu Kassadin Vi Lux Cassiopeia Cho'Gath Fizz
+Topic 2: Sion Gnar Maokai Kennen Rek'Sai Lissandra Braum Shen Jayce Gragas Lulu Rumble Cho'Gath Olaf Thresh Morgana Hecarim Bard Shyvana
+Topic 3: Lee Sin Graves Gragas Jarvan IV Lucian Nidalee Thresh Zed Ezreal Vi LeBlanc Caitlyn Kha'Zix Ahri Renekton Blitzcrank Janna Nunu Vayne
+Topic 4: Janna Nami Lulu Sona Morgana Braum Leona Caitlyn Nautilus Soraka Bard Karma Maokai Sivir Lux Shen Zilean Annie Alistar
+Topic 5: Riven Vayne Irelia Katarina Gnar Lee Sin Annie Jax Graves Zed LeBlanc Nidalee Caitlyn Thresh Nasus Rengar Renekton Kha'Zix Vi
+Topic 6: Nidalee Kalista Jinx Rek'Sai Vayne Ahri Ezreal Tristana Cassiopeia Fizz Gnar Thresh Katarina LeBlanc Sivir Ashe Blitzcrank Vladimir Annie
+Topic 7: Blitzcrank Ezreal Shaco Caitlyn Lux Pantheon Ashe Alistar Gangplank Jarvan IV Malphite Nocturne Kennen Nunu Zilean Fiddlesticks Morgana Cho'Gath Twisted Fate
+Topic 8: Vladimir Cho'Gath Jax Tryndamere Xin Zhao Nasus Annie Pantheon Wukong Darius Swain Kassadin Volibear Warwick Malphite Morgana Olaf Amumu Nunu
+Topic 9: Irelia Hecarim Renekton Rumble Maokai Lissandra Jarvan IV Jax Shyvana Vladimir Graves Fizz Kassadin Gnar Malphite Diana Kennen Vi Wukong
+Topic 10: Amumu Master Yi Rammus Singed Shen Taric Caitlyn Malphite Blitzcrank Warwick Janna Nunu Garen Dr. Mundo Fiddlesticks Galio Morgana Jarvan IV Lux
+Topic 11: Graves Jinx Lucian Sivir Caitlyn Corki Kalista Tristana Ezreal Vayne Ashe Kog'Maw Vi Orianna Draven Janna Twitch Jarvan IV Varus
+Topic 12: Nautilus Sejuani Gragas Nunu Zac Kha'Zix Shyvana Volibear Skarner Hecarim Vi Elise Maokai Nocturne Amumu Jarvan IV Xin Zhao Malphite Alistar
+Topic 13: Cassiopeia Azir Viktor Twisted Fate Kassadin Xerath LeBlanc Kog'Maw Ahri Vladimir Orianna Ezreal Urgot Lissandra Diana Rumble Ziggs Karthus Lulu
+Topic 14: Zed Yasuo Lucian LeBlanc Lee Sin Graves Katarina Talon Ahri Fizz Kha'Zix Vayne Ezreal Thresh Riven Rengar Azir Vladimir Jayce
+Topic 15: Leona Swain Braum Volibear Poppy Xin Zhao Shyvana Amumu Sona Vi Alistar Wukong Morgana Caitlyn Darius Sejuani Ryze Syndra Brand
+Topic 16: Malzahar Ashe Talon Heimerdinger Brand Gangplank Varus Teemo Quinn Karthus Aatrox Veigar Trundle Nocturne Darius Bard Galio Sona Caitlyn
+Topic 17: Vi Jarvan IV Rek'Sai Pantheon Sejuani Wukong Gragas Graves Maokai Leona Xin Zhao Amumu Lissandra Volibear Nocturne Kha'Zix Hecarim Morgana Malphite
+Topic 18: Katarina Diana Lux Anivia Akali Caitlyn Jinx Orianna Kennen Lissandra LeBlanc Talon Blitzcrank Ahri Amumu Kassadin Cassiopeia Sejuani Fiora
+Topic 19: Fizz Udyr Evelynn Volibear Nasus Annie Hecarim Tristana Master Yi Vi Kha'Zix Sona Shaco Akali Shyvana Teemo Karthus Wukong Fiddlesticks
+Topic 20: Annie Morgana Fiora Ziggs Sivir Malphite Caitlyn Pantheon Ashe Tristana Blitzcrank Leona Lissandra Amumu Lux Janna Cho'Gath Warwick Sona
+Topic 21: Rengar Bard Kha'Zix Hecarim Graves Rek'Sai Renekton Zac Vi Jarvan IV Master Yi Jax Lee Sin Lucian Nidalee Draven Volibear Thresh Yasuo
+Topic 22: Vayne Wukong Draven Twitch Lucian Ezreal Jinx Jax Ashe Nasus Caitlyn Graves Irelia Orianna Kha'Zix Master Yi Nocturne Vi Sivir
+Topic 23: Thresh Morgana Blitzcrank Leona Braum Nautilus Janna Bard Alistar Maokai Annie Nami Jarvan IV Orianna Lulu Caitlyn Renekton Malphite Dr. Mundo
+Topic 24: Nasus Malphite Warwick Soraka Kayle Alistar Garen Darius Mordekaiser Dr. Mundo Olaf Tristana Jax Pantheon Wukong Blitzcrank Xin Zhao Veigar Volibear
+
+
