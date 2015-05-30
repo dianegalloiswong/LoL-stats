@@ -24,6 +24,22 @@ def get_champions_usage(riot, summoner_ids):
 
 
 def store_champions_usage(filefrom, fileto, riot):
+    """
+    Reads a list of summoner ids from file called filefrom,
+    collects number of game with each champion for each of them
+    and stores this in a new file called fileto.
+    :param filefrom:
+    :param fileto:
+    :param riot:
+    :return:
+
+    >>> from riotwatcher import RiotWatcher
+    >>> from data_path import test_collect_summoner_ids_data, test_collect_champions_usage_data
+    >>> riot = RiotWatcher()
+    >>> store_champions_usage(test_collect_summoner_ids_data, test_collect_champions_usage_data, riot)
+    10 done
+    20 done
+    """
     ffrom = open(filefrom, 'r')
     summoner_ids = json.load(ffrom)
     ffrom.close()
@@ -35,9 +51,6 @@ def store_champions_usage(filefrom, fileto, riot):
 
 
 
-if __name__ == '__main__':
-    f = open('riot_api_key', 'r')
-    key = json.load(f)
-    f.close()
-    riot = RiotWatcher(key)
-    store_champions_usage('test_get_summoner_ids', 'test_get_champions_usage', riot)
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()

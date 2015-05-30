@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # for i in range(0, len(summoners_to_stats)-1):
     #     print(X[i])
     # np.savetxt("champ_usage_test.csv", X, delimiter="," )
-    model = lda.LDA(n_topics=4, n_iter=100, random_state=1)
+    model = lda.LDA(n_topics=50, n_iter=50, random_state=1)
     model.fit(X)
     topic_word = model.topic_word_
     n_top_words = 20

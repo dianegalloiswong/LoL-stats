@@ -3,8 +3,7 @@
 from collections import deque
 import time
 import requests
-
-
+import json
 
 
 # Constants
@@ -19,7 +18,12 @@ OCEANIA = 'oce'
 RUSSIA = 'ru'
 TURKEY = 'tr'
 
+###custom
 my_default_region = EUROPE_WEST
+
+with open('riot_api_key','r') as f:
+    my_key = json.load(f)
+###
 
 # Platforms
 platforms = {
@@ -214,7 +218,7 @@ class RateLimit:
 
 
 class RiotWatcher:
-    def __init__(self, key, default_region=my_default_region, limits=(RateLimit(10, 10), RateLimit(500, 600), )):
+    def __init__(self, key=my_key, default_region=my_default_region, limits=(RateLimit(10, 10), RateLimit(500, 600), )):
         self.key = key
         self.default_region = default_region
         self.limits = limits
@@ -225,12 +229,11 @@ class RiotWatcher:
                 return False
         return True
 
-    # custom
+    ### custom
     def wait(self):
         while not self.can_make_request():
             time.sleep(1)
-
-#####################
+    ###
 
     def base_request(self, url, region, static=False, **kwargs):
         if region is None:

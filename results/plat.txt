@@ -83,4 +83,20 @@ Topic 22: Vayne Wukong Draven Twitch Lucian Ezreal Jinx Jax Ashe Nasus Caitlyn G
 Topic 23: Thresh Morgana Blitzcrank Leona Braum Nautilus Janna Bard Alistar Maokai Annie Nami Jarvan IV Orianna Lulu Caitlyn Renekton Malphite Dr. Mundo
 Topic 24: Nasus Malphite Warwick Soraka Kayle Alistar Garen Darius Mordekaiser Dr. Mundo Olaf Tristana Jax Pantheon Wukong Blitzcrank Xin Zhao Veigar Volibear
 
+champions_usage_plat_0-9\6, 100 iter        -11957438
+Topic 0: Graves Jinx Ahri Lee Sin Lucian Vayne Riven Zed LeBlanc Nidalee Kalista Ezreal Rengar Katarina Caitlyn Thresh Sivir Yasuo Orianna
+Topic 1: Thresh Janna Leona Morgana Vi Annie Blitzcrank Nautilus Jarvan IV Wukong Amumu Sion Maokai Nasus Pantheon Sejuani Rek'Sai Irelia Hecarim
+
+champions_usage_plat_0-9\6, 100 iter        -12069421
+Topic 0: Thresh Janna Leona Morgana Vi Nautilus Blitzcrank Nami Rek'Sai Jarvan IV Braum Annie Lulu Sejuani Maokai Amumu Gragas Caitlyn Sona
+Topic 1: Rengar Irelia Vladimir Nasus Wukong Hecarim Sion Shaco Pantheon Cho'Gath Fizz Annie Udyr Fiddlesticks Katarina Vi Malphite Jax Renekton
+Topic 2: Graves Jinx Ahri Lucian Lee Sin Vayne Riven Zed LeBlanc Kalista Nidalee Ezreal Caitlyn Sivir Yasuo Orianna Katarina Xerath Thresh
+
+champions_usage_plat_0-9\6, 100 iter        -11976840
+Topic 0: Thresh Janna Morgana Leona Nami Blitzcrank Nautilus Braum Lulu Annie Bard Sona Maokai Alistar Caitlyn Amumu Zyra Orianna Vi
+Topic 1: Ahri Riven Zed LeBlanc Katarina Yasuo Nidalee Lee Sin Orianna Xerath Cassiopeia Lissandra Azir Diana Kassadin Fizz Ezreal Thresh Twisted Fate
+Topic 2: Vi Lee Sin Rengar Jarvan IV Irelia Rek'Sai Hecarim Sion Gnar Gragas Maokai Sejuani Fizz Udyr Nidalee Renekton Kha'Zix Rumble Nautilus
+Topic 3: Nasus Annie Wukong Fiddlesticks Pantheon Cho'Gath Vladimir Amumu Malphite Swain Shaco Blitzcrank Malzahar Fiora Tryndamere Lux Leona Vel'Koz Master Yi
+Topic 4: Graves Jinx Lucian Vayne Kalista Caitlyn Sivir Ezreal Corki Draven Tristana Ashe Thresh Kog'Maw Lee Sin Ahri Twitch Orianna Irelia
+
 

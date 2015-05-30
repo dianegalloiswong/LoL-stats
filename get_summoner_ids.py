@@ -1,5 +1,6 @@
+
 import json
-from riotwatcher import LoLException, RiotWatcher
+from riotwatcher import LoLException
 
 report_freq = 100
 
@@ -49,16 +50,25 @@ def get_summoner_ids(riot, n, initial_summoner_id):
     return summoner_ids
 
 def store_summoner_ids(filename, riot, n, initial_summoner_id):
+    """
+    Collects at least n summoner ids, starting with initial_summoner_id,
+     and stores them in a new file filename.
+    :param filename:
+    :param riot:
+    :param n:
+    :param initial_summoner_id:
+    :return:
+
+    >>> from riotwatcher import RiotWatcher
+    >>> from data_path import test_collect_summoner_ids_data
+    >>> riot = RiotWatcher()
+    >>> store_summoner_ids(test_collect_summoner_ids_data, riot, 20, 30890339)
+    """
     summoner_ids = list(get_summoner_ids(riot, n, initial_summoner_id))
     f = open(filename, 'w')
     json.dump(summoner_ids,f)
     f.close()
 
-
-
-if __name__ == '__main__':
-    f = open('riot_api_key', 'r')
-    key = json.load(f)
-    f.close()
-    riot = RiotWatcher(key)
-    store_summoner_ids('test_get_summoner_ids', riot, 20, 30890339)
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
