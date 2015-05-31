@@ -1,6 +1,7 @@
 riot_api_key
 draft*
-test*
+test_data/
+!test_data/test_store_champions_usage_data
 .idea/
 
 

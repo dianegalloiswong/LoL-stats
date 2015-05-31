@@ -1,7 +1,7 @@
 import json
 from riotwatcher import RiotWatcher
-from get_summoner_ids import store_summoner_ids
-from get_champions_usage import store_champions_usage
+from collect_summoner_ids import store_summoner_ids
+from collect_champions_usage import store_champions_usage
 
 
 def data_collection_test(riot):

@@ -10,7 +10,7 @@ def get_champions_usage_one_summoner(riot, summoner_id):
     champions = [(x['id'], x['stats']) for x in champions]
     return dict([(id, st['totalSessionsPlayed']) for (id, st) in champions])
 
-def get_champions_usage(riot, summoner_ids):
+def collect_champions_usage(riot, summoner_ids):
     usage_list = []
     for id in summoner_ids:
         try:
@@ -34,16 +34,15 @@ def store_champions_usage(filefrom, fileto, riot):
     :return:
 
     >>> from riotwatcher import RiotWatcher
-    >>> from data_path import test_collect_summoner_ids_data, test_collect_champions_usage_data
+    >>> from data_path import test_store_champions_usage_data, test_store_champions_usage_result
     >>> riot = RiotWatcher()
-    >>> store_champions_usage(test_collect_summoner_ids_data, test_collect_champions_usage_data, riot)
+    >>> store_champions_usage(test_store_champions_usage_data, test_store_champions_usage_result, riot)
     10 done
-    20 done
     """
     ffrom = open(filefrom, 'r')
     summoner_ids = json.load(ffrom)
     ffrom.close()
-    champions_usage = get_champions_usage(riot, summoner_ids)
+    champions_usage = collect_champions_usage(riot, summoner_ids)
     fto = open(fileto, 'w')
     json.dump(champions_usage,fto)
     fto.close()

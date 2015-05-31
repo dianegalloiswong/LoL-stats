@@ -23,7 +23,7 @@ def summoner_id_to_match_ids(riot, summoner_id):
         print('LoLException: '+str(e)+', in summoner_id_to_match_ids with summoner_id = '+str(summoner_id))
         return []
 
-def get_summoner_ids(riot, n, initial_summoner_id):
+def collect_summoner_ids(riot, n, initial_summoner_id):
     summoner_ids = set()
     match_ids = set()
     pending_summoner_ids = [initial_summoner_id]
@@ -60,11 +60,11 @@ def store_summoner_ids(filename, riot, n, initial_summoner_id):
     :return:
 
     >>> from riotwatcher import RiotWatcher
-    >>> from data_path import test_collect_summoner_ids_data
+    >>> from data_path import test_store_summoner_ids_result
     >>> riot = RiotWatcher()
-    >>> store_summoner_ids(test_collect_summoner_ids_data, riot, 20, 30890339)
+    >>> store_summoner_ids(test_store_summoner_ids_result, riot, 20, 30890339)
     """
-    summoner_ids = list(get_summoner_ids(riot, n, initial_summoner_id))
+    summoner_ids = list(collect_summoner_ids(riot, n, initial_summoner_id))
     f = open(filename, 'w')
     json.dump(summoner_ids,f)
     f.close()
@@ -72,3 +72,12 @@ def store_summoner_ids(filename, riot, n, initial_summoner_id):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+
+    # from riotwatcher import RiotWatcher
+    # from data_path import test_store_champions_usage_data
+    # riot = RiotWatcher()
+    # summoner_ids = list(collect_summoner_ids(riot, 1, 30890339))
+    # print(len(summoner_ids))
+    # f = open(test_store_champions_usage_data, 'w')
+    # json.dump(summoner_ids,f)
+    # f.close()
