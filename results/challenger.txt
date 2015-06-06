@@ -1,0 +1,40 @@
+Topic 0: Irelia Gnar Hecarim Sion Maokai Rumble Lissandra Fizz Vladimir Lulu Kennen Renekton Malphite Jax Cho'Gath Kassadin Aatrox Graves Shyvana
+Topic 1: Rengar Nidalee Rek'Sai Lee Sin Riven Jarvan IV Gragas Sejuani Vi Zyra Nunu Elise Kha'Zix Fiddlesticks Evelynn Pantheon Blitzcrank Wukong Skarner
+Topic 2: Graves Kalista Lucian Jinx Sivir Corki Draven Ezreal Caitlyn Vayne Tristana Ashe Urgot Lee Sin Xerath Kog'Maw Thresh Jarvan IV Varus
+Topic 3: Ahri LeBlanc Zed Cassiopeia Azir Viktor Lissandra Xerath Kassadin Orianna Lee Sin Twisted Fate Lulu Ezreal Graves Yasuo Vladimir Diana Riven
+Topic 4: Thresh Janna Blitzcrank Morgana Annie Leona Nautilus Bard Lulu Braum Alistar Tryndamere Nami Nunu Kennen Caitlyn Sona Fiddlesticks Zyra
+
+
+
+Topic 0: Irelia Gnar Rengar Hecarim Rumble Maokai Lissandra Vladimir Fizz Tryndamere Kennen Lulu Renekton Jax Sion Malphite Cho'Gath Wukong Aatrox
+Topic 1: Graves Kalista Lucian Jinx Sivir Corki Ezreal Draven Vayne Tristana Caitlyn Ashe Urgot Lee Sin Xerath Kog'Maw Thresh Jarvan IV Vladimir
+Topic 2: Ahri LeBlanc Zed Cassiopeia Riven Azir Viktor Lissandra Xerath Kassadin Lee Sin Orianna Twisted Fate Graves Ezreal Lulu Zyra Vladimir Diana
+Topic 3: Thresh Janna Morgana Blitzcrank Annie Leona Nautilus Lulu Bard Alistar Braum Nami Nunu Kennen Sejuani Caitlyn Sona Sion Pantheon
+Topic 4: Rek'Sai Nidalee Lee Sin Jarvan IV Gragas Rengar Sejuani Sion Vi Kha'Zix Nunu Elise Fiddlesticks Evelynn Pantheon Olaf Nautilus Blitzcrank Hecarim
+
+
+Topic 0: Graves Lucian Lee Sin Thresh Corki Ezreal Jarvan IV Caitlyn Vladimir Irelia Gnar Blitzcrank Xerath Twitch Vayne Sivir Janna Lissandra Maokai
+Topic 1: Blitzcrank Annie Ahri Morgana Bard Janna Aatrox LeBlanc Leona Lissandra Pantheon Caitlyn Lux Alistar Soraka Jinx Katarina Sivir Heimerdinger
+Topic 2: Riven Irelia Tryndamere Renekton Janna Gangplank Singed Dr. Mundo Fizz Yasuo Jax Brand Vi Shaco Corki Soraka Ezreal Wukong Trundle
+Topic 3: Graves Kalista Jinx Lucian Sivir Corki Draven Tristana Vayne Ashe Caitlyn Urgot Ezreal Kog'Maw Xerath Sion Varus Maokai Vi
+Topic 4: Viktor Azir LeBlanc Vladimir Cho'Gath Kassadin Yasuo Ziggs Xerath Twisted Fate Diana Kog'Maw Lulu Urgot Varus Karthus Graves Zed Annie
+Topic 5: Thresh Janna Nautilus Morgana Leona Annie Blitzcrank Lulu Braum Nami Alistar Nunu Bard Kennen Malphite Taric Caitlyn Maokai Sejuani
+Topic 6: Zyra Fiddlesticks Cassiopeia Syndra Vi Ashe Sivir Diana Jarvan IV Draven Nasus Annie Graves Shyvana Veigar Fizz Sejuani Jinx Nunu
+Topic 7: Gnar Irelia Hecarim Sion Rumble Maokai Lissandra Vladimir Fizz Kennen Lulu Malphite Cho'Gath Jax Kassadin Renekton Shyvana Skarner Cassiopeia
+Topic 8: Ahri LeBlanc Zed Cassiopeia Lissandra Orianna Xerath Lee Sin Kassadin Ezreal Lulu Twisted Fate Katarina Azir Nidalee Diana Yasuo Morgana Talon
+Topic 9: Rengar Nidalee Rek'Sai Lee Sin Jarvan IV Gragas Sejuani Vi Nunu Kha'Zix Elise Evelynn Pantheon Blitzcrank Nautilus Fizz Wukong Olaf Zac
+
+
+Topic 0: Graves Kalista Jinx Lucian Sivir Corki Draven Tristana Vayne Caitlyn Ashe Urgot Ezreal Kog'Maw Xerath Varus Vi Janna Leona
+Topic 1: Sion Tryndamere Fiddlesticks Aatrox Skarner Kassadin Rek'Sai Hecarim Evelynn Yasuo Maokai Malphite Shen Ashe Nasus Kennen Ryze Vi Fizz
+Topic 2: Nidalee Rek'Sai Lee Sin Jarvan IV Gragas Sejuani Vi Kha'Zix Elise Nunu Evelynn Pantheon Blitzcrank Fizz Zac Nautilus Udyr Hecarim Maokai
+Topic 3: Ahri LeBlanc Zed Cassiopeia Lissandra Azir Orianna Xerath Kassadin Viktor Lulu Twisted Fate Ezreal Lee Sin Yasuo Katarina Diana Kog'Maw Caitlyn
+Topic 4: Irelia Riven Gnar Rumble Lissandra Fizz Hecarim Maokai Lulu Renekton Kennen Cassiopeia Malphite Jax Shyvana Janna Morgana Nidalee Sion
+Topic 5: Rengar Wukong Rek'Sai Jax Vi Fizz Jarvan IV Volibear Blitzcrank Pantheon Kha'Zix Karthus Skarner Nocturne Rammus Lissandra Vladimir Orianna Tristana
+Topic 6: Thresh Janna Morgana Blitzcrank Annie Leona Nautilus Lulu Bard Braum Alistar Nami Nunu Caitlyn Sona Kennen Pantheon Sejuani Soraka
+Topic 7: Graves Lee Sin Lucian Thresh Ezreal Corki Jarvan IV Blitzcrank Lissandra Gnar Maokai Irelia Xerath Zed Vladimir Sivir Kennen Pantheon Twitch
+Topic 8: Vladimir Hecarim Viktor Cho'Gath Maokai Jarvan IV Kassadin Fizz Gragas Graves Diana Urgot Lissandra Nautilus Lulu Olaf Alistar Yasuo Jax
+Topic 9: Zyra Azir Cassiopeia Cho'Gath Syndra Bard Karma Gangplank Annie Vel'Koz Diana Singed Ezreal Corki Brand Varus Heimerdinger Fizz Malzahar
+
+
+
