@@ -1,0 +1,88 @@
+Master + challenger
+
+-1928403
+Topic 0: Graves Lucian Kalista Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Kog'Maw Urgot Lee Sin Thresh Kayle Janna Xerath
+Topic 1: Thresh Janna Morgana Leona Blitzcrank Annie Nautilus Lulu Braum Alistar Nami Bard Fiddlesticks Malphite Shaco Zyra Nunu Sona Jarvan IV
+Topic 2: Ahri LeBlanc Zed Cassiopeia Xerath Lissandra Azir Orianna Yasuo Viktor Twisted Fate Katarina Kassadin Riven Vladimir Ezreal Lulu Lee Sin Diana
+Topic 3: Irelia Gnar Hecarim Maokai Sion Rumble Vladimir Riven Fizz Lissandra Kennen Jax Renekton Olaf Tryndamere Malphite Cassiopeia Fiora Shyvana
+Topic 4: Rek'Sai Lee Sin Nidalee Rengar Jarvan IV Gragas Sejuani Vi Nunu Evelynn Kha'Zix Zac Elise Pantheon Maokai Skarner Udyr Fizz Blitzcrank
+
+
+-1926993
+Topic 0: Rek'Sai Lee Sin Nidalee Rengar Jarvan IV Gragas Vi Sejuani Nunu Fiddlesticks Evelynn Tryndamere Kha'Zix Zac Pantheon Elise Shaco Maokai Skarner
+Topic 1: Thresh Janna Morgana Leona Blitzcrank Annie Nautilus Lulu Braum Alistar Bard Nami Malphite Nunu Quinn Sona Maokai Kennen Pantheon
+Topic 2: Graves Kalista Lucian Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Kog'Maw Urgot Lee Sin Thresh Xerath Twitch Jarvan IV
+Topic 3: Irelia Gnar Hecarim Maokai Sion Rumble Vladimir Fizz Kennen Lissandra Jax Renekton Olaf Malphite Cassiopeia Fiora Shyvana Kassadin Lulu
+Topic 4: Ahri LeBlanc Zed Cassiopeia Riven Xerath Azir Lissandra Orianna Yasuo Viktor Twisted Fate Kassadin Katarina Vladimir Lee Sin Lulu Ezreal Nidalee
+
+
+-1927323
+Topic 0: Rek'Sai Lee Sin Nidalee Rengar Jarvan IV Gragas Vi Sejuani Fiddlesticks Nunu Olaf Evelynn Kha'Zix Zac Elise Pantheon Shaco Maokai Fizz
+Topic 1: Ahri LeBlanc Zed Cassiopeia Xerath Lissandra Azir Orianna Yasuo Viktor Twisted Fate Kassadin Katarina Vladimir Riven Ezreal Lulu Lee Sin Diana
+Topic 2: Irelia Gnar Hecarim Maokai Sion Riven Rumble Vladimir Fizz Lissandra Jax Kennen Renekton Tryndamere Malphite Cassiopeia Fiora Shyvana Kassadin
+Topic 3: Graves Kalista Lucian Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Kog'Maw Urgot Lee Sin Xerath Jarvan IV Thresh Twitch
+Topic 4: Thresh Janna Morgana Leona Annie Blitzcrank Nautilus Lulu Braum Alistar Nami Bard Malphite Nunu Sona Kennen Maokai Pantheon Jarvan IV
+
+
+-1983535
+Topic 0: Graves Thresh Janna Kalista Lucian Jinx Sivir Morgana Leona Corki Annie Nautilus Blitzcrank Vayne Caitlyn Ezreal Lulu Braum Tristana
+Topic 1: Irelia Gnar Hecarim Maokai Sion Rumble Vladimir Fizz Kennen Lissandra Jax Renekton Malphite Cassiopeia Tryndamere Fiora Kassadin Shyvana Lulu
+Topic 2: Ahri LeBlanc Zed Cassiopeia Riven Xerath Lissandra Azir Orianna Yasuo Viktor Twisted Fate Kassadin Katarina Vladimir Lee Sin Ezreal Lulu Nidalee
+Topic 3: Rek'Sai Lee Sin Nidalee Rengar Jarvan IV Gragas Sejuani Vi Nunu Fiddlesticks Evelynn Olaf Kha'Zix Pantheon Zac Blitzcrank Elise Shaco Maokai
+
+
+-1967993
+Topic 0: Rek'Sai Lee Sin Nidalee Rengar Jarvan IV Gragas Vi Sejuani Olaf Nunu Fiddlesticks Evelynn Kha'Zix Maokai Zac Pantheon Elise Fizz Hecarim
+Topic 1: Thresh Janna Irelia Gnar Morgana Leona Blitzcrank Annie Nautilus Hecarim Maokai Sion Lulu Rumble Kennen Braum Malphite Lissandra Alistar
+Topic 2: Ahri LeBlanc Zed Cassiopeia Riven Lissandra Azir Xerath Vladimir Orianna Yasuo Kassadin Viktor Twisted Fate Katarina Lee Sin Ezreal Lulu Diana
+Topic 3: Graves Kalista Lucian Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Kog'Maw Urgot Thresh Lee Sin Xerath Janna Jarvan IV
+
+
+-1954339
+Topic 0: Ahri LeBlanc Zed Cassiopeia Riven Lissandra Azir Xerath Orianna Yasuo Viktor Kassadin Twisted Fate Katarina Vladimir Lee Sin Lulu Ezreal Nidalee
+Topic 1: Rek'Sai Lee Sin Irelia Nidalee Gnar Rengar Hecarim Jarvan IV Maokai Gragas Sion Vi Sejuani Fizz Rumble Vladimir Lissandra Jax Olaf
+Topic 2: Graves Kalista Lucian Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Kog'Maw Urgot Lee Sin Thresh Xerath Skarner Jarvan IV
+Topic 3: Thresh Janna Morgana Leona Blitzcrank Annie Nautilus Lulu Braum Alistar Nami Bard Malphite Shaco Nunu Jarvan IV Sona Pantheon Maokai
+
+
+-1996241
+Topic 0: Ahri LeBlanc Zed Cassiopeia Riven Lissandra Azir Xerath Vladimir Orianna Yasuo Kassadin Nidalee Lee Sin Viktor Twisted Fate Katarina Lulu Ezreal
+Topic 1: Thresh Janna Rek'Sai Lee Sin Irelia Morgana Gnar Nidalee Rengar Jarvan IV Leona Hecarim Blitzcrank Maokai Nautilus Gragas Annie Sion Vi
+Topic 2: Graves Kalista Lucian Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Kog'Maw Urgot Thresh Janna Lee Sin Kayle Skarner
+
+
+-2008888
+Topic 0: Rek'Sai Lee Sin Nidalee Rengar Jarvan IV Gragas Vi Sejuani Nunu Sion Olaf Fiddlesticks Maokai Evelynn Blitzcrank Hecarim Pantheon Kha'Zix Zac
+Topic 1: Ahri LeBlanc Irelia Zed Gnar Cassiopeia Lissandra Riven Vladimir Hecarim Azir Xerath Kassadin Rumble Maokai Fizz Orianna Lulu Yasuo
+Topic 2: Graves Thresh Janna Kalista Lucian Jinx Sivir Morgana Leona Corki Annie Nautilus Blitzcrank Vayne Caitlyn Ezreal Lulu Tristana Braum
+
+
+-2002472
+Topic 0: Graves Lucian Kalista Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Urgot Kog'Maw Thresh Lee Sin Janna Xerath Jarvan IV
+Topic 1: Rek'Sai Lee Sin Nidalee Irelia Gnar Rengar Hecarim Jarvan IV Maokai Gragas Riven Sion Fizz Vi Sejuani Rumble Vladimir Lissandra Jax
+Topic 2: Thresh Ahri Janna LeBlanc Zed Morgana Cassiopeia Annie Leona Blitzcrank Lulu Nautilus Lissandra Azir Xerath Orianna Twisted Fate Kassadin Viktor
+
+
+-1927073
+Topic 0: Graves Lucian Kalista Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Urgot Kog'Maw Lee Sin Thresh Xerath Jarvan IV Twitch
+Topic 1: Irelia Gnar Hecarim Maokai Sion Rumble Fizz Lissandra Jax Vladimir Kennen Renekton Tryndamere Malphite Cassiopeia Fiora Shyvana Kassadin Jarvan IV
+Topic 2: Vladimir Yasuo Twisted Fate Azir Cho'Gath Karthus Viktor Talon Ezreal Katarina Brand Vel'Koz Master Yi Veigar Alistar Kog'Maw Kassadin Urgot Blitzcrank
+Topic 3: Rek'Sai Lee Sin Nidalee Rengar Jarvan IV Gragas Vi Sejuani Nunu Fiddlesticks Olaf Evelynn Kha'Zix Zac Elise Pantheon Shaco Maokai Skarner
+Topic 4: Thresh Janna Morgana Leona Annie Nautilus Blitzcrank Lulu Braum Nami Alistar Bard Malphite Nunu Sona Maokai Kayle Kennen Jarvan IV
+Topic 5: Ahri LeBlanc Zed Cassiopeia Riven Lissandra Xerath Orianna Lee Sin Kassadin Azir Lulu Katarina Nidalee Viktor Ezreal Diana Vladimir Graves
+
+
+-1944032
+Topic 0: Rek'Sai Nidalee Rengar Lee Sin Jarvan IV Gragas Sejuani Vi Nunu Evelynn Kha'Zix Zac Pantheon Elise Shaco Fizz Udyr Maokai Wukong
+Topic 1: Irelia Gnar Hecarim Sion Maokai Rumble Vladimir Fizz Kennen Jax Lissandra Renekton Fiddlesticks Olaf Tryndamere Malphite Cassiopeia Fiora Shyvana
+Topic 2: Lee Sin Graves Thresh Lucian Lissandra Jarvan IV Ahri Gnar Irelia Zed Orianna Corki Caitlyn Vi Maokai Janna Ezreal Lulu LeBlanc
+Topic 3: Ahri LeBlanc Zed Cassiopeia Riven Azir Xerath Lissandra Yasuo Viktor Twisted Fate Orianna Kassadin Vladimir Katarina Lulu Ezreal Diana Cho'Gath
+Topic 4: Graves Kalista Lucian Jinx Sivir Corki Vayne Caitlyn Ezreal Tristana Draven Ashe Kog'Maw Urgot Quinn Twitch Xerath Varus Vladimir
+Topic 5: Thresh Janna Morgana Leona Nautilus Blitzcrank Annie Lulu Braum Alistar Nami Bard Malphite Nunu Sona Kennen Pantheon Sion Maokai
+
+
+
+
+
+
+
