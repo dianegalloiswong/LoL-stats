@@ -1,9 +1,6 @@
 import json
 from riotwatcher import RiotWatcher
-
-f = open('riot_api_key', 'r')
-key = json.load(f)
-f.close()
+from data_path import file_champion_id_to_name, columns_to_id as file_columns_to_id
 
 
 def get_id_to_name(riot:RiotWatcher):
@@ -11,9 +8,8 @@ def get_id_to_name(riot:RiotWatcher):
     id_to_name = dict()
     for champ in champs_by_id:
         id_to_name[champs_by_id[champ]['id']] = champs_by_id[champ]['name']
-    d = open('id_to_name', 'w')
-    json.dump(id_to_name, d)
-    d.close()
+    with open(file_champion_id_to_name,'w') as f:
+        json.dump(id_to_name, f)
     return id_to_name
 
 
@@ -23,11 +19,13 @@ def make_columns_to_id(id_to_name):
     for id in id_to_name:
         columns_to_id[c] = id
         c = c + 1
-    c = open('columns_to_id', 'w')
-    json.dump(columns_to_id, c)
-    c.close()
+    with open(file_columns_to_id,'w') as f:
+        json.dump(columns_to_id, f)
     return columns_to_id
 
+def main():
+    id_to_name = get_id_to_name(RiotWatcher())
+    make_columns_to_id(id_to_name)
+
 if __name__ == '__main__':
-    m=get_id_to_name(RiotWatcher(key))
-    make_columns_to_id(m)
+    main()

@@ -65,19 +65,17 @@ def store_summoner_ids(filename, riot, n, initial_summoner_id):
     >>> store_summoner_ids(test_store_summoner_ids_result, riot, 20, 30890339)
     """
     summoner_ids = list(collect_summoner_ids(riot, n, initial_summoner_id))
-    f = open(filename, 'w')
-    json.dump(summoner_ids,f)
-    f.close()
+    with open(filename, 'w') as f:
+        json.dump(summoner_ids,f)
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+# if __name__ == "__main__":
+#     import doctest
+#     doctest.testmod()
 
     # from riotwatcher import RiotWatcher
     # from data_path import test_store_champions_usage_data
     # riot = RiotWatcher()
     # summoner_ids = list(collect_summoner_ids(riot, 1, 30890339))
     # print(len(summoner_ids))
-    # f = open(test_store_champions_usage_data, 'w')
-    # json.dump(summoner_ids,f)
-    # f.close()
+    # with open(test_store_champions_usage_data, 'w') as f:
+    #     json.dump(summoner_ids,f)

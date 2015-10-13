@@ -43,9 +43,8 @@ def store_champions_usage(filefrom, fileto, riot):
     summoner_ids = json.load(ffrom)
     ffrom.close()
     champions_usage = collect_champions_usage(riot, summoner_ids)
-    fto = open(fileto, 'w')
-    json.dump(champions_usage,fto)
-    fto.close()
+    with open(fileto, 'w') as fto:
+        json.dump(champions_usage,fto)
 
 
 
