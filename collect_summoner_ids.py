@@ -17,8 +17,9 @@ def match_id_to_summoner_ids(riot, match_id):
 def summoner_id_to_match_ids(riot, summoner_id):
     riot.wait()
     try:
-        match_history = riot.get_match_history(summoner_id, ranked_queues=['RANKED_SOLO_5x5'])
-        return [match_summary['matchId'] for match_summary in match_history['matches'] if match_summary['season']=='SEASON2015']
+        match_history = riot.get_match_list(summoner_id, ranked_queues=['RANKED_SOLO_5x5'], seasons=['SEASON2015'])
+        #return [match_summary['matchId'] for match_summary in match_history['matches'] if match_summary['season']=='SEASON2015']
+        return [match_summary['matchId'] for match_summary in match_history['matches']]
     except LoLException as e:
         print('LoLException: '+str(e)+', in summoner_id_to_match_ids with summoner_id = '+str(summoner_id))
         return []
@@ -47,6 +48,7 @@ def collect_summoner_ids(riot, n, initial_summoner_id):
             if len(summoner_ids) > n:
                 break
         pending_match_ids.clear()
+    print(str(len(summoner_ids))+' summoner ids collected')
     return summoner_ids
 
 def store_summoner_ids(filename, riot, n, initial_summoner_id):
@@ -59,23 +61,15 @@ def store_summoner_ids(filename, riot, n, initial_summoner_id):
     :param initial_summoner_id:
     :return:
 
-    >>> from riotwatcher import RiotWatcher
-    >>> from data_path import test_store_summoner_ids_result
-    >>> riot = RiotWatcher()
-    >>> store_summoner_ids(test_store_summoner_ids_result, riot, 20, 30890339)
+    >>> import riotwatcher, data_path
+    >>> riot = riotwatcher.RiotWatcher()
+    >>> store_summoner_ids(data_path.test_store_summoner_ids_result, riot, 20, 30890339)
+    22 summoner ids collected
     """
     summoner_ids = list(collect_summoner_ids(riot, n, initial_summoner_id))
     with open(filename, 'w') as f:
         json.dump(summoner_ids,f)
 
-# if __name__ == "__main__":
-#     import doctest
-#     doctest.testmod()
-
-    # from riotwatcher import RiotWatcher
-    # from data_path import test_store_champions_usage_data
-    # riot = RiotWatcher()
-    # summoner_ids = list(collect_summoner_ids(riot, 1, 30890339))
-    # print(len(summoner_ids))
-    # with open(test_store_champions_usage_data, 'w') as f:
-    #     json.dump(summoner_ids,f)
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()

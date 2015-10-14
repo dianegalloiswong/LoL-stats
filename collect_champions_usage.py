@@ -1,5 +1,5 @@
 import json
-from riotwatcher import LoLException, RiotWatcher
+from riotwatcher import LoLException
 
 
 report_freq = 10
@@ -39,9 +39,8 @@ def store_champions_usage(filefrom, fileto, riot):
     >>> store_champions_usage(test_store_champions_usage_data, test_store_champions_usage_result, riot)
     10 done
     """
-    ffrom = open(filefrom, 'r')
-    summoner_ids = json.load(ffrom)
-    ffrom.close()
+    with open(filefrom,'r') as ffrom:
+        summoner_ids = json.load(ffrom)
     champions_usage = collect_champions_usage(riot, summoner_ids)
     with open(fileto, 'w') as fto:
         json.dump(champions_usage,fto)
@@ -49,6 +48,14 @@ def store_champions_usage(filefrom, fileto, riot):
 
 
 
+
+def setup_test_data():
+    import riotwatcher, collect_summoner_ids, data_path
+    riot = riotwatcher.RiotWatcher()
+    with open(data_path.test_store_champions_usage_data, 'w') as f:
+        collect_summoner_ids.store_summoner_ids(f,riot, 1, 30890339)
+
 if __name__ == "__main__":
+    #setup_test_data()
     import doctest
     doctest.testmod()
