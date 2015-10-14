@@ -1,10 +1,15 @@
 # from https://github.com/pseudonym117/Riot-Watcher
+# with a few changes: search "CUSTOMISED"
 
 from collections import deque
 import time
 import requests
-import json
 
+### CUSTOMISED
+with open('riot_api_key','r') as f:
+    import json
+    my_key = json.load(f)
+###
 
 # Constants
 BRAZIL = 'br'
@@ -18,11 +23,8 @@ OCEANIA = 'oce'
 RUSSIA = 'ru'
 TURKEY = 'tr'
 
-###custom
+### CUSTOMISED
 my_default_region = EUROPE_WEST
-
-with open('riot_api_key','r') as f:
-    my_key = json.load(f)
 ###
 
 # Platforms
@@ -71,6 +73,8 @@ queue_types = [
     'ASCENSION_5x5',  # Ascension games
     'HEXAKILL',  # 6v6 games on twisted treeline
     'KING_PORO_5x5',  # King Poro game games
+    'COUNTER_PICK',  # Nemesis games,
+    'BILGEWATER_5x5',  # Black Market Brawlers games
 ]
 
 game_maps = [
@@ -82,6 +86,7 @@ game_maps = [
     {'map_id': 10, 'name': "Twisted Treeline", 'notes': "Current Version"},
     {'map_id': 11, 'name': "Summoner's Rift", 'notes': "Current Version"},
     {'map_id': 12, 'name': "Howling Abyss", 'notes': "ARAM Map"},
+    {'map_id': 14, 'name': "Butcher's Bridge", 'notes': "ARAM Map"},
 ]
 
 game_modes = [
@@ -122,7 +127,9 @@ sub_types = [
     'NIGHTMARE_BOT',  # Nightmare bots
     'ASCENSION',  # Ascension games
     'HEXAKILL',  # Twisted Treeline 6x6 Hexakill
-    ' KING_PORO',  # King Poro games
+    'KING_PORO',  # King Poro games
+    'COUNTER_PICK',  # Nemesis games
+    'BILGEWATER',  # Black Market Brawlers games
 ]
 
 player_stat_summary_types = [
@@ -145,6 +152,8 @@ player_stat_summary_types = [
     'NightmareBot',  # Summoner's Rift games played against Nightmare AI
     'Hexakill',  # Twisted Treeline 6x6 Hexakill games
     'KingPoro',  # King Poro games
+    'CounterPick',  # Nemesis games
+    'Bilgewater',  # Black Market Brawlers games
 ]
 
 solo_queue, ranked_5s, ranked_3s = 'RANKED_SOLO_5x5', 'RANKED_TEAM_5x5', 'RANKED_TEAM_3x3'
@@ -159,6 +168,7 @@ api_versions = {
     'lol-status': 1.0,
     'match': 2.2,
     'matchhistory': 2.2,
+    'matchlist': 2.2,
     'stats': 1.3,
     'summoner': 1.4,
     'team': 2.4
@@ -166,34 +176,35 @@ api_versions = {
 
 
 class LoLException(Exception):
-    def __init__(self, error):
+    def __init__(self, error, response):
         self.error = error
+        self.headers = response.headers
 
     def __str__(self):
         return self.error
 
 
-error_400 = LoLException("Bad request")
-error_401 = LoLException("Unauthorized")
-error_404 = LoLException("Game data not found")
-error_429 = LoLException("Too many requests")
-error_500 = LoLException("Internal server error")
-error_503 = LoLException("Service unavailable")
+error_400 = "Bad request"
+error_401 = "Unauthorized"
+error_404 = "Game data not found"
+error_429 = "Too many requests"
+error_500 = "Internal server error"
+error_503 = "Service unavailable"
 
 
 def raise_status(response):
     if response.status_code == 400:
-        raise error_400
+        raise LoLException(error_400, response)
     elif response.status_code == 401:
-        raise error_401
+        raise LoLException(error_401, response)
     elif response.status_code == 404:
-        raise error_404
+        raise LoLException(error_404, response)
     elif response.status_code == 429:
-        raise error_429
+        raise LoLException(error_429, response)
     elif response.status_code == 500:
-        raise error_500
+        raise LoLException(error_500, response)
     elif response.status_code == 503:
-        raise error_503
+        raise LoLException(error_503, response)
     else:
         response.raise_for_status()
 
@@ -218,7 +229,10 @@ class RateLimit:
 
 
 class RiotWatcher:
+    ### CUSTOMISED
+    #def __init__(self, key, default_region=NORTH_AMERICA, limits=(RateLimit(10, 10), RateLimit(500, 600), )):
     def __init__(self, key=my_key, default_region=my_default_region, limits=(RateLimit(10, 10), RateLimit(500, 600), )):
+    ###
         self.key = key
         self.default_region = default_region
         self.limits = limits
@@ -229,7 +243,7 @@ class RiotWatcher:
                 return False
         return True
 
-    ### custom
+    ### CUSTOMISED
     def wait(self):
         while not self.can_make_request():
             time.sleep(1)
@@ -519,6 +533,31 @@ class RiotWatcher:
             region,
             championIds=champion_ids,
             rankedQueues=ranked_queues,
+            beginIndex=begin_index,
+            endIndex=end_index
+        )
+
+    # match list-v2.2
+    def _match_list_request(self, end_url, region, **kwargs):
+        return self.base_request(
+            'v{version}/matchlist/by-summoner/{end_url}'.format(
+                version=api_versions['matchlist'],
+                end_url=end_url,
+            ),
+            region,
+            **kwargs
+        )
+
+    def get_match_list(self, summoner_id, region=None, champion_ids=None, ranked_queues=None, seasons=None,
+                        begin_time=None, end_time=None, begin_index=None, end_index=None):
+        return self._match_list_request(
+            '{summoner_id}'.format(summoner_id=summoner_id),
+            region,
+            championsIds=champion_ids,
+            rankedQueues=ranked_queues,
+            seasons=seasons,
+            beginTime=begin_time,
+            endTime=end_time,
             beginIndex=begin_index,
             endIndex=end_index
         )
