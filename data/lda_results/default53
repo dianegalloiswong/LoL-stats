@@ -1,0 +1,26 @@
+INFO:lda:n_documents: 958
+INFO:lda:vocab_size: 127
+INFO:lda:n_words: 803332
+INFO:lda:n_topics: 10
+INFO:lda:n_iter: 100
+INFO:lda:<0> log likelihood: -5461006
+INFO:lda:<10> log likelihood: -3543153
+INFO:lda:<20> log likelihood: -3400207
+INFO:lda:<30> log likelihood: -3372590
+INFO:lda:<40> log likelihood: -3363977
+INFO:lda:<50> log likelihood: -3356391
+INFO:lda:<60> log likelihood: -3353673
+INFO:lda:<70> log likelihood: -3349146
+INFO:lda:<80> log likelihood: -3348398
+INFO:lda:<90> log likelihood: -3347193
+INFO:lda:<99> log likelihood: -3345625
+Topic 0: Soraka Karthus Fiddlesticks Vladimir Sion Pantheon Akali Cho'Gath Shaco Aatrox Gangplank Blitzcrank Nasus Volibear Tahm Kench Katarina Leona Annie Swain
+Topic 1: Janna Morgana Alistar Nautilus Annie Braum Bard Lulu Nami Leona Shen Vel'Koz Tahm Kench Maokai Kennen Malphite Caitlyn Thresh Corki
+Topic 2: Rengar Tryndamere Draven Kayle Talon Brand Veigar Wukong Jayce Master Yi Blitzcrank Vladimir Darius Karma Annie Jax Miss Fortune Jarvan IV Cho'Gath
+Topic 3: Ahri LeBlanc Zed Viktor Azir Twisted Fate Orianna Cassiopeia Lulu Xerath Diana Lissandra Ezreal Kassadin Vladimir Fizz Varus Jayce Ekko
+Topic 4: Irelia Gnar Hecarim Rumble Fizz Maokai Olaf Shen Lulu Renekton Lissandra Vladimir Kennen Ryze Sion Jax Malphite Gangplank Graves
+Topic 5: Yasuo Kha'Zix Jax Mordekaiser Lee Sin Zed Xin Zhao Ekko Fiora Master Yi Quinn Shen Bard Lucian Vi Vayne Shyvana Renekton Darius
+Topic 6: Kalista Graves Lucian Vayne Jinx Sivir Tristana Corki Ezreal Caitlyn Ashe Kog'Maw Draven Lee Sin Twitch Urgot Vladimir Mordekaiser Janna
+Topic 7: Rek'Sai Nidalee Lee Sin Gragas Elise Jarvan IV Evelynn Vi Sejuani Ekko Rengar Nunu Kha'Zix Zac Maokai Graves Pantheon Nautilus Fizz
+Topic 8: Thresh Blitzcrank Braum Leona Alistar Janna Morgana Nautilus Lee Sin Bard Gnar Graves Gragas Cho'Gath Lucian Orianna Ahri Maokai Nami
+Topic 9: Riven Lee Sin Katarina Irelia Vayne Diana Nidalee Zed LeBlanc Rengar Lucian Ahri Annie Renekton Graves Janna Morgana Ezreal Gnar
