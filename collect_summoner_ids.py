@@ -1,6 +1,7 @@
-
 import json
-from riotwatcher import LoLException
+
+import riotwatcher
+import data_path
 
 report_freq = 100
 
@@ -10,7 +11,7 @@ def match_id_to_summoner_ids(riot, match_id):
     try:
         match_detail = riot.get_match(match_id)
         return [participantIdentity['player']['summonerId'] for participantIdentity in match_detail['participantIdentities']]
-    except LoLException as e:
+    except riotwatcher.LoLException as e:
         print('LoLException: '+str(e)+', in match_id_to_summoner_ids with match_id = '+str(match_id))
         return []
 
@@ -20,7 +21,7 @@ def summoner_id_to_match_ids(riot, summoner_id):
         match_history = riot.get_match_list(summoner_id, ranked_queues=['RANKED_SOLO_5x5'], seasons=['SEASON2015'])
         #return [match_summary['matchId'] for match_summary in match_history['matches'] if match_summary['season']=='SEASON2015']
         return [match_summary['matchId'] for match_summary in match_history['matches']]
-    except LoLException as e:
+    except riotwatcher.LoLException as e:
         print('LoLException: '+str(e)+', in summoner_id_to_match_ids with summoner_id = '+str(summoner_id))
         return []
 
@@ -69,6 +70,17 @@ def store_summoner_ids(filename, riot, n, initial_summoner_id):
     summoner_ids = list(collect_summoner_ids(riot, n, initial_summoner_id))
     with open(filename, 'w') as f:
         json.dump(summoner_ids,f)
+
+
+def collect_master_summoner_ids():
+    riot = riotwatcher.RiotWatcher()
+    riot.wait()
+    resp = riot.get_master()
+    ids = [int(entry['playerOrTeamId']) for entry in resp['entries']]
+    print(len(ids))
+    print(ids)
+    with open(data_path.summoner_ids_master, 'w') as f:
+        json.dump(ids, f)
 
 if __name__ == "__main__":
     import doctest

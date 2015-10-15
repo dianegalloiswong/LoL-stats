@@ -1,5 +1,6 @@
 import json
-from riotwatcher import LoLException
+
+import riotwatcher
 
 
 report_freq = 10
@@ -18,7 +19,7 @@ def collect_champions_usage(riot, summoner_ids):
             usage_list.append((id, usage))
             if len(usage_list)%report_freq==0:
                 print(str(len(usage_list))+' done')
-        except LoLException as e:
+        except riotwatcher.LoLException as e:
             print('LoLException: '+str(e)+', in get_champions_usage_one_summoner with summoner_id = '+str(id))
     return dict(usage_list)
 
