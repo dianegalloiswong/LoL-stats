@@ -58,16 +58,27 @@ app.mainloop()
 
 b_app = True
 
-class IntExpectedException(Exception):
-    def __init__(self, message, entry):
-        self.message = message
+class InvalidValueException(Exception):
+    def __init__(self, name, entry, lbound=None, ubound=None):
+        if lbound is not None:
+            msg_end = 'should be at least {}'.format(lbound)
+        elif ubound is not None:
+            msg_end = 'should be at most {}'.format(ubound)
+        else:
+            msg_end = "should be an integer"
+        self.message = "Invalid {}: {}.".format(name,msg_end)
         self.entry = entry
 
-def get_int_from_StringVar(stringvar,error_message=None,entry=None):
+def get_int_from_StringVar(stringvar,name=None,entry=None,lbound=None,ubound=None):
     try:
-        return int(stringvar.get())
+        n = int(stringvar.get())
+        if lbound is not None and n < lbound:
+            raise InvalidValueException(name, entry, lbound=lbound)
+        if ubound is not None and n > ubound:
+            raise InvalidValueException(name, entry, ubound=ubound)
+        return n
     except ValueError:
-        raise IntExpectedException(error_message,entry)
+        raise InvalidValueException(name,entry)
 
 
 class App(tkinter.Tk):
@@ -91,23 +102,29 @@ class App(tkinter.Tk):
         self.lda_n_topics_entry = tkinter.Entry(self.lda_params_frame,
                                                 textvariable=self.lda_n_topics_var,
                                                 width=3)
+        self.lda_n_topics_entry.bind("<Return>", self.run_lda_callback)
         self.lda_n_topics_entry.grid(row=0,column=1)
 
         lda_button = tkinter.Button(self.lda_frame, text="Run LDA",
                                     command=self.run_lda)
         lda_button.grid(column=0, row=3)
         self.lda_run_label_var = tkinter.StringVar()
-        lda_run_label = tkinter.Label(self.lda_frame, textvariable=self.lda_run_label_var)
-        lda_run_label.grid(column=0, row=4,sticky='EW')
+        self.lda_run_label = tkinter.Label(self.lda_frame, textvariable=self.lda_run_label_var)
+        self.lda_run_label.grid(column=0, row=4,sticky='EW')
+
+    def run_lda_callback(self,event):
+        self.run_lda()
 
     def run_lda(self):
         try:
             n_topics = get_int_from_StringVar(self.lda_n_topics_var,
-                                              error_message="Invalid number of topics.",
-                                              entry=self.lda_n_topics_entry)
-            self.lda_run_label_var.set('Running LDA with {} topics.'.format(n_topics))
-        except IntExpectedException as e:
+                                              name="number of topics",
+                                              entry=self.lda_n_topics_entry,
+                                              lbound=2, ubound=100)
+            self.run_lda_with_args(n_topics)
+        except InvalidValueException as e:
             self.lda_run_label_var.set(e.message)
+            self.lda_run_label.config(fg="red")
             e.entry.focus_set()
             e.entry.selection_range(0, tkinter.END)
         # try:
@@ -118,6 +135,9 @@ class App(tkinter.Tk):
         #     self.lda_n_topics_entry.focus_set()
         #     self.lda_n_topics_entry.selection_range(0, tkinter.END)
 
+    def run_lda_with_args(self,n_topics):
+        self.lda_run_label_var.set('Running LDA with {} topics.'.format(n_topics))
+        self.lda_run_label.config(fg="black")
 
 
 
