@@ -1,4 +1,5 @@
 import tkinter
+import tkinter.font
 # import tkinter.messagebox
 # tkinter.messagebox.showerror("Error","Invalid number of topics")
 
@@ -80,30 +81,94 @@ def get_int_from_StringVar(stringvar,name=None,entry=None,lbound=None,ubound=Non
     except ValueError:
         raise InvalidValueException(name,entry)
 
-
-class App(tkinter.Tk):
-    def __init__(self, parent):
-        tkinter.Tk.__init__(self, parent)
+class Param:
+    def __init__(self,parent,name,
+                 init=None, lbound=None, ubound=None,
+                 width=4, row=0, column=0,
+                 callback=None):
+        #self.frame = tkinter.Frame(parent)
         self.parent = parent
+        self.name = name
+        self.lbound = lbound
+        self.ubound = ubound
 
-        self.lda_frame = tkinter.Frame(self)
-        self.lda_frame.grid()
+        self.label = tkinter.Label(parent, text=name, anchor='w')
+        self.label.grid(row=row,column=column, sticky='w')
+
+        self.var = tkinter.StringVar()
+        if init is not None:
+            self.var.set(init)
+        self.entry = tkinter.Entry(parent, textvariable=self.var, width=width,
+                                   justify='right')
+        if callback is not None:
+            self.entry.bind("<Return>", callback)
+        self.entry.grid(row=row,column=column+1)
+
+    def get_int(self):
+        n = get_int_from_StringVar(self.var,
+                                   name=self.name, entry=self.entry,
+                                   lbound=self.lbound, ubound=self.ubound)
+        return n
+
+class Counter:
+    def __init__(self, init=0):
+        self.counter = init
+
+    def get(self):
+        n = self.counter
+        self.counter +=1
+        return n
+
+
+# default text font is {'family': 'Segoe UI', 'weight': 'normal', 'size': 9, 'overstrike': 0, 'slant': 'roman', 'underline': 0}
+
+class LDA_App:
+    def __init__(self, parent=None):
+        # tkinter.Tk.__init__(self, parent)
+        # self.parent = parent
+        # #self.title('LDA')
+        self.root = tkinter.Tk(parent)
+        self.root.title('LDA on masters')
+
+
+        self.lda_frame = tkinter.Frame(self.root)
+        self.lda_frame.grid(sticky='EW')
+
 
         self.lda_label = tkinter.Label(self.lda_frame, text="LDA parameters")
         self.lda_label.grid(row=0,column=0,sticky='EW')
+        # font = tkinter.font.Font(font=self.lda_label['font'])
+        # print(font.actual())
 
         self.lda_params_frame = tkinter.Frame(self.lda_frame)
         self.lda_params_frame.grid(row=1,column=0,sticky='EW')
 
-        self.lda_n_topics_var = tkinter.StringVar()
-        self.lda_n_topics_var.set("10")
-        lda_n_topics_label = tkinter.Label(self.lda_params_frame, text="number of topics")
-        lda_n_topics_label.grid(row=0,column=0)
-        self.lda_n_topics_entry = tkinter.Entry(self.lda_params_frame,
-                                                textvariable=self.lda_n_topics_var,
-                                                width=3)
-        self.lda_n_topics_entry.bind("<Return>", self.run_lda_callback)
-        self.lda_n_topics_entry.grid(row=0,column=1)
+        # self.lda_n_topics_var = tkinter.StringVar()
+        # self.lda_n_topics_var.set("10")
+        # lda_n_topics_label = tkinter.Label(self.lda_params_frame, text="number of topics")
+        # lda_n_topics_label.grid(row=0,column=0)
+        # self.lda_n_topics_entry = tkinter.Entry(self.lda_params_frame,
+        #                                         textvariable=self.lda_n_topics_var,
+        #                                         width=3)
+        # self.lda_n_topics_entry.bind("<Return>", self.run_lda_callback)
+        # self.lda_n_topics_entry.grid(row=0,column=1)
+
+        param_row = Counter(init=0)
+
+        self.n_topics_param = Param(self.lda_params_frame, 'number of topics',
+                                    row=param_row.get(),
+                                    init=10, lbound=2, ubound=100,
+                                    callback=self.run_lda_callback)
+
+        self.n_iter_param = Param(self.lda_params_frame, 'number of iterations',
+                                  row=param_row.get(),
+                                  init=100, lbound=10, ubound=9999,
+                                  callback=self.run_lda_callback)
+
+        self.n_topic_words_param = Param(self.lda_params_frame, 'number of words displayed per topic',
+                                         row=param_row.get(),
+                                         init=20, lbound=1, ubound=100,
+                                         callback=self.run_lda_callback)
 
         lda_button = tkinter.Button(self.lda_frame, text="Run LDA",
                                     command=self.run_lda)
@@ -112,16 +177,23 @@ class App(tkinter.Tk):
         self.lda_run_label = tkinter.Label(self.lda_frame, textvariable=self.lda_run_label_var)
         self.lda_run_label.grid(column=0, row=4,sticky='EW')
 
+        f = tkinter.Frame(self.lda_frame)
+        f.grid(row=5,column=0,sticky='EW')
+        Param(f,"something",init='0',width=5)
+
     def run_lda_callback(self,event):
         self.run_lda()
 
     def run_lda(self):
         try:
-            n_topics = get_int_from_StringVar(self.lda_n_topics_var,
-                                              name="number of topics",
-                                              entry=self.lda_n_topics_entry,
-                                              lbound=2, ubound=100)
-            self.run_lda_with_args(n_topics)
+            # n_topics = get_int_from_StringVar(self.lda_n_topics_var,
+            #                                   name="number of topics",
+            #                                   entry=self.lda_n_topics_entry,
+            #                                   lbound=2, ubound=100)
+            n_topics = self.n_topics_param.get_int()
+            n_iter = self.n_iter_param.get_int()
+            n_topic_words = self.n_topic_words_param.get_int()
+            self.run_lda_with_args(n_topics, n_iter, n_topic_words)
         except InvalidValueException as e:
             self.lda_run_label_var.set(e.message)
             self.lda_run_label.config(fg="red")
@@ -135,16 +207,17 @@ class App(tkinter.Tk):
         #     self.lda_n_topics_entry.focus_set()
         #     self.lda_n_topics_entry.selection_range(0, tkinter.END)
 
-    def run_lda_with_args(self,n_topics):
-        self.lda_run_label_var.set('Running LDA with {} topics.'.format(n_topics))
+    def run_lda_with_args(self, n_topics, n_iter, n_topic_words):
+        self.lda_run_label_var.set('Running LDA with {} topics, {} iterations, and {} words displayed per topic.'.format(n_topics, n_iter, n_topic_words))
         self.lda_run_label.config(fg="black")
 
+    def mainloop(self):
+        self.root.mainloop()
 
 
 
 def launch_app():
-    app = App(None)
-    app.title('App')
+    app = LDA_App()
     app.mainloop()
 
 
