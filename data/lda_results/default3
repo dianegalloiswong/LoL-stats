@@ -1,0 +1,28 @@
+Data file: D:\Documents\GitHub\LoL-stats\data\champions_usage_master
+10 topics, 100 iterations, 20 words displayed per topic
+INFO:lda:n_documents: 958
+INFO:lda:vocab_size: 127
+INFO:lda:n_words: 803332
+INFO:lda:n_topics: 10
+INFO:lda:n_iter: 100
+INFO:lda:<0> log likelihood: -5461018
+INFO:lda:<10> log likelihood: -3604395
+INFO:lda:<20> log likelihood: -3430509
+INFO:lda:<30> log likelihood: -3392168
+INFO:lda:<40> log likelihood: -3373678
+INFO:lda:<50> log likelihood: -3364129
+INFO:lda:<60> log likelihood: -3358996
+INFO:lda:<70> log likelihood: -3352185
+INFO:lda:<80> log likelihood: -3344231
+INFO:lda:<90> log likelihood: -3342699
+INFO:lda:<99> log likelihood: -3342093
+Topic 0: Riven Yasuo Rengar Jax Kha'Zix Zed Vayne Jayce Wukong Diana Fiora Ekko Vi Lucian Hecarim Thresh Master Yi Darius Katarina
+Topic 1: Thresh Janna Alistar Morgana Nautilus Braum Blitzcrank Bard Leona Annie Lulu Nami Tahm Kench Maokai Shen Kennen Malphite Gragas Vi
+Topic 2: Irelia Gnar Hecarim Rumble Fizz Maokai Lulu Shen Renekton Kennen Lissandra Ryze Olaf Vladimir Sion Jax Malphite Gangplank Graves
+Topic 3: Draven Talon Vel'Koz Olaf Aatrox Xin Zhao Quinn Twitch Karma Master Yi Jax Shen Miss Fortune Renekton Malphite Twisted Fate Mordekaiser Ashe Kennen
+Topic 4: Lee Sin Kayle Thresh Graves Lucian Jarvan IV Brand Nidalee Zed Shen Ekko Vayne Irelia Ezreal Caitlyn Blitzcrank Ahri Nunu Gragas
+Topic 5: Soraka Annie Fiddlesticks Pantheon Cho'Gath Akali Kha'Zix Shaco Blitzcrank Tahm Kench Leona Janna Volibear Malphite Nasus Zac Shyvana Udyr Ezreal
+Topic 6: Rek'Sai Nidalee Gragas Elise Evelynn Jarvan IV Vi Sejuani Ekko Rengar Nunu Lee Sin Kha'Zix Zac Maokai Pantheon Nautilus Olaf Skarner
+Topic 7: Katarina Tryndamere Vladimir Karthus Sion Gangplank Mordekaiser Veigar Fiora Poppy Wukong Swain Blitzcrank Jax Darius Nasus Viktor Lux Amumu
+Topic 8: Kalista Graves Lucian Vayne Jinx Sivir Tristana Corki Ezreal Caitlyn Ashe Kog'Maw Urgot Twitch Thresh Janna Draven Vladimir Mordekaiser
+Topic 9: Ahri LeBlanc Zed Viktor Azir Twisted Fate Orianna Cassiopeia Lulu Xerath Diana Lissandra Ezreal Kassadin Fizz Vladimir Yasuo Varus Jayce

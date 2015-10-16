@@ -1,0 +1,29 @@
+Data file: D:\Documents\GitHub\LoL-stats\data\champions_usage_master
+10 topics, 100 iterations, 20 words displayed per topic
+
+INFO:lda:n_documents: 958
+INFO:lda:vocab_size: 127
+INFO:lda:n_words: 803332
+INFO:lda:n_topics: 10
+INFO:lda:n_iter: 100
+INFO:lda:<0> log likelihood: -5461001
+INFO:lda:<10> log likelihood: -3673010
+INFO:lda:<20> log likelihood: -3462928
+INFO:lda:<30> log likelihood: -3424516
+INFO:lda:<40> log likelihood: -3401091
+INFO:lda:<50> log likelihood: -3382597
+INFO:lda:<60> log likelihood: -3365919
+INFO:lda:<70> log likelihood: -3357632
+INFO:lda:<80> log likelihood: -3351684
+INFO:lda:<90> log likelihood: -3350343
+INFO:lda:<99> log likelihood: -3347657
+Topic 0: Thresh Blitzcrank Braum Alistar Leona Lee Sin Morgana Janna Bard Gnar Nautilus Graves Gragas Lucian Ahri Orianna Nami Jarvan IV Xerath
+Topic 1: Janna Morgana Alistar Nautilus Braum Annie Bard Lulu Leona Nami Tahm Kench Maokai Shen Kennen Malphite Soraka Caitlyn Corki Nunu
+Topic 2: Rek'Sai Lee Sin Nidalee Gragas Elise Jarvan IV Evelynn Vi Ekko Sejuani Rengar Nunu Kha'Zix Maokai Zac Graves Fizz Pantheon Olaf
+Topic 3: Katarina Tryndamere Talon Fiddlesticks Vladimir Soraka Blitzcrank Akali Shaco Veigar Leona Poppy Nasus Cho'Gath Annie Anivia Lux Kassadin Nunu
+Topic 4: Yasuo Rengar Draven Kha'Zix Jax Olaf Wukong Aatrox Zed Quinn Master Yi Riven Shen Vi Ekko Fiora Darius Renekton Rammus
+Topic 5: Irelia Gnar Riven Hecarim Rumble Fizz Maokai Renekton Lissandra Shen Lulu Vladimir Ryze Kennen Olaf Jax Malphite Sion Gangplank
+Topic 6: Twisted Fate Kayle Pantheon Annie Gangplank Xin Zhao Ezreal Twitch Master Yi Vladimir Ashe Shyvana Shen Jarvan IV Zilean Varus Garen Darius Morgana
+Topic 7: Kalista Graves Lucian Vayne Jinx Sivir Tristana Corki Ezreal Caitlyn Ashe Kog'Maw Draven Lee Sin Urgot Twitch Vladimir Mordekaiser Janna
+Topic 8: Sion Karthus Vel'Koz Brand Viktor Mordekaiser Cho'Gath Zac Fiora Volibear Swain Vi Kog'Maw Maokai Malzahar Karma Udyr Yorick Soraka
+Topic 9: Ahri Zed LeBlanc Azir Viktor Orianna Twisted Fate Cassiopeia Xerath Lulu Diana Yasuo Lissandra Ezreal Kassadin Vladimir Lee Sin Fizz Varus

@@ -1,0 +1,28 @@
+Data file: D:\Documents\GitHub\LoL-stats\data\champions_usage_master
+10 topics, 100 iterations, 20 words displayed per topic
+INFO:lda:n_documents: 958
+INFO:lda:vocab_size: 127
+INFO:lda:n_words: 803332
+INFO:lda:n_topics: 10
+INFO:lda:n_iter: 100
+INFO:lda:<0> log likelihood: -5460998
+INFO:lda:<10> log likelihood: -3634043
+INFO:lda:<20> log likelihood: -3430806
+INFO:lda:<30> log likelihood: -3392264
+INFO:lda:<40> log likelihood: -3375941
+INFO:lda:<50> log likelihood: -3365682
+INFO:lda:<60> log likelihood: -3363347
+INFO:lda:<70> log likelihood: -3360926
+INFO:lda:<80> log likelihood: -3358960
+INFO:lda:<90> log likelihood: -3357891
+INFO:lda:<99> log likelihood: -3357474
+Topic 0: Riven Lee Sin Zed Vayne Nidalee LeBlanc Irelia Thresh Katarina Rengar Lucian Ahri Graves Diana Yasuo Ekko Renekton Gnar Ezreal
+Topic 1: Janna Annie Morgana Bard Soraka Nautilus Leona Fiddlesticks Tahm Kench Lulu Alistar Nami Shen Nunu Braum Maokai Kennen Caitlyn Vi
+Topic 2: Rek'Sai Nidalee Lee Sin Gragas Elise Jarvan IV Evelynn Vi Ekko Sejuani Kayle Nunu Rengar Zac Kha'Zix Maokai Graves Pantheon Fizz
+Topic 3: Kalista Graves Lucian Vayne Jinx Sivir Tristana Corki Ezreal Caitlyn Ashe Draven Kog'Maw Urgot Twitch Lee Sin Vladimir Mordekaiser Varus
+Topic 4: Irelia Gnar Hecarim Rumble Fizz Maokai Lulu Lissandra Shen Renekton Vladimir Ryze Kennen Sion Jax Olaf Malphite Gangplank Fiora
+Topic 5: Thresh Janna Alistar Braum Blitzcrank Morgana Nautilus Leona Bard Lulu Annie Nami Lee Sin Gragas Maokai Shen Jarvan IV Gnar Kennen
+Topic 6: Rengar Tryndamere Kha'Zix Olaf Vladimir Pantheon Wukong Brand Gangplank Master Yi Blitzcrank Darius Jayce Draven Garen Hecarim Jarvan IV Jax Nasus
+Topic 7: Ahri LeBlanc Viktor Azir Twisted Fate Zed Orianna Cassiopeia Xerath Lulu Diana Lissandra Ezreal Kassadin Fizz Vladimir Varus Syndra Jayce
+Topic 8: Katarina Karthus Vel'Koz Sion Cho'Gath Akali Mordekaiser Xin Zhao Shaco Volibear Blitzcrank Zac Swain Amumu Fiora Soraka Udyr Kog'Maw Yorick
+Topic 9: Yasuo Talon Jax Veigar Aatrox Poppy Ekko Shen Alistar Fiora Zed Lee Sin Lucian Kha'Zix Vladimir Vi Master Yi Blitzcrank Azir

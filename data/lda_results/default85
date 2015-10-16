@@ -1,0 +1,29 @@
+Data file: D:\Documents\GitHub\LoL-stats\data\champions_usage_master
+10 topics, 100 iterations, 20 words displayed per topic
+
+INFO:lda:n_documents: 958
+INFO:lda:vocab_size: 127
+INFO:lda:n_words: 803332
+INFO:lda:n_topics: 10
+INFO:lda:n_iter: 100
+INFO:lda:<0> log likelihood: -5461023
+INFO:lda:<10> log likelihood: -3549141
+INFO:lda:<20> log likelihood: -3416272
+INFO:lda:<30> log likelihood: -3386399
+INFO:lda:<40> log likelihood: -3372572
+INFO:lda:<50> log likelihood: -3361216
+INFO:lda:<60> log likelihood: -3357802
+INFO:lda:<70> log likelihood: -3354896
+INFO:lda:<80> log likelihood: -3349298
+INFO:lda:<90> log likelihood: -3348951
+INFO:lda:<99> log likelihood: -3348825
+Topic 0: Thresh Janna Alistar Morgana Nautilus Braum Blitzcrank Bard Leona Annie Lulu Nami Maokai Shen Tahm Kench Kennen Malphite Caitlyn Gragas
+Topic 1: Tryndamere Kayle Sion Fiddlesticks Karthus Olaf Pantheon Cho'Gath Mordekaiser Brand Xin Zhao Shaco Gangplank Swain Jax Fiora Kog'Maw Yorick Malzahar
+Topic 2: Ahri Zed LeBlanc Viktor Azir Twisted Fate Orianna Cassiopeia Lulu Xerath Diana Lissandra Ezreal Kassadin Vladimir Fizz Varus Yasuo Ekko
+Topic 3: Nidalee Rengar Kha'Zix Blitzcrank Jayce Lee Sin Gnar Gragas Wukong Hecarim Ekko Zed Elise Morgana Darius Bard Varus Ezreal Vi
+Topic 4: Rek'Sai Lee Sin Gragas Jarvan IV Elise Evelynn Vi Sejuani Ekko Nidalee Nunu Zac Maokai Graves Pantheon Nautilus Lucian Skarner Fizz
+Topic 5: Riven Yasuo Lee Sin Jax Poppy Zed Lucian Fiora Diana Thresh Rengar Shen Renekton Kha'Zix Ekko Irelia Shyvana Graves Katarina
+Topic 6: Kalista Graves Lucian Jinx Sivir Corki Tristana Vayne Caitlyn Ezreal Ashe Kog'Maw Urgot Janna Lee Sin Vladimir Mordekaiser Varus Twitch
+Topic 7: Irelia Gnar Hecarim Fizz Rumble Maokai Lulu Shen Renekton Lissandra Vladimir Kennen Ryze Sion Olaf Malphite Jax Gangplank Fiora
+Topic 8: Vayne Draven Lee Sin Twitch Thresh Jinx Twisted Fate Graves Ezreal Volibear Tristana Lucian Master Yi Kennen Irelia Ashe Gnar Alistar Vi
+Topic 9: Katarina Soraka Annie Talon Vel'Koz Vladimir Akali Veigar Wukong Blitzcrank Leona Quinn Lux Nasus Tahm Kench Karma Janna Udyr Kassadin

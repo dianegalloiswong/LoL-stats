@@ -36,9 +36,13 @@ def run_lda(filename,filetoname=None,n_topics=10,n_iter=100,n_topic_words=20):
     if filetoname==None:
         filetoname=os.path.join(data_path.lda_results,'default'+str(numpy.random.randint(0,100)))
     fileto = open(filetoname, "w")
+    former_out = sys.stdout
     sys.stdout = fileto
+
     sys.stderr = fileto
     print('Data file: '+str(filename))
+    print('{} topics, {} iterations, {} words displayed per topic'.format(n_topics, n_iter, n_topic_words))
+    print()
     X, vocab = lda_inputs(filename)
     model = lda.LDA(n_topics=n_topics, n_iter=n_iter, random_state=1)
     model.fit(X)
@@ -47,10 +51,17 @@ def run_lda(filename,filetoname=None,n_topics=10,n_iter=100,n_topic_words=20):
         topic_words = numpy.array(vocab)[numpy.argsort(topic_dist)][:-n_topic_words:-1]
         print('Topic {}: {}'.format(i, ' '.join(topic_words)))
     fileto.close()
+    return filetoname
 
+def run_lda_masters(filetoname=None,n_topics=10,n_iter=100,n_topic_words=20):
+    filetoname = run_lda(data_path.champions_usage_master,
+                         filetoname=filetoname,
+                         n_topics=n_topics,n_iter=n_iter,n_topic_words=n_topic_words)
+    return filetoname
 
 if __name__ == '__main__':
-    run_lda(data_path.champions_usage_master)
+    f = run_lda_masters()
+    print(f)
 
     # with open('data/champions_usage_master') as f:
     #     summoners_to_stats = json.load(f)

@@ -1,0 +1,28 @@
+Data file: D:\Documents\GitHub\LoL-stats\data\champions_usage_master
+10 topics, 100 iterations, 20 words displayed per topic
+INFO:lda:n_documents: 958
+INFO:lda:vocab_size: 127
+INFO:lda:n_words: 803332
+INFO:lda:n_topics: 10
+INFO:lda:n_iter: 100
+INFO:lda:<0> log likelihood: -5461001
+INFO:lda:<10> log likelihood: -3597397
+INFO:lda:<20> log likelihood: -3444473
+INFO:lda:<30> log likelihood: -3418785
+INFO:lda:<40> log likelihood: -3403835
+INFO:lda:<50> log likelihood: -3393044
+INFO:lda:<60> log likelihood: -3384918
+INFO:lda:<70> log likelihood: -3380098
+INFO:lda:<80> log likelihood: -3374104
+INFO:lda:<90> log likelihood: -3367505
+INFO:lda:<99> log likelihood: -3363744
+Topic 0: Thresh Janna Alistar Morgana Braum Blitzcrank Nautilus Bard Leona Annie Lulu Nami Tahm Kench Kennen Shen Lee Sin Gnar Soraka Malphite
+Topic 1: Maokai Nautilus Vi Sion Jarvan IV Pantheon Janna Nunu Malphite Gragas Sejuani Shen Alistar Braum Cho'Gath Morgana Sivir Leona Zac
+Topic 2: Ahri LeBlanc Zed Orianna Azir Cassiopeia Lulu Xerath Viktor Diana Lissandra Ezreal Kassadin Fizz Vladimir Syndra Jayce Veigar Varus
+Topic 3: Rengar Kha'Zix Fiddlesticks Wukong Shaco Xin Zhao Mordekaiser Aatrox Tahm Kench Poppy Quinn Volibear Zac Blitzcrank Skarner Hecarim Master Yi Gangplank Fizz
+Topic 4: Irelia Gnar Hecarim Rumble Fizz Maokai Olaf Lulu Kennen Shen Renekton Vladimir Lissandra Ryze Jax Gangplank Sion Malphite Fiora
+Topic 5: Riven Yasuo Lee Sin Jax Vayne Zed Rengar Lucian Thresh Fiora Diana Talon Katarina Renekton Ekko Nidalee Irelia Shen Kha'Zix
+Topic 6: Katarina Tryndamere Soraka Kayle Karthus Annie Vladimir Akali Cho'Gath Nasus Leona Blitzcrank Warwick Janna Yorick Fiora Kog'Maw Malzahar Amumu
+Topic 7: Twisted Fate Viktor Azir Talon Vel'Koz Brand Ekko Anivia Bard Varus Gangplank Xerath Veigar Master Yi Diana Lux Karma Vladimir Ezreal
+Topic 8: Kalista Graves Lucian Vayne Jinx Sivir Tristana Corki Ezreal Caitlyn Draven Ashe Kog'Maw Lee Sin Thresh Twitch Urgot Janna Vladimir
+Topic 9: Rek'Sai Lee Sin Nidalee Gragas Elise Evelynn Jarvan IV Ekko Vi Sejuani Rengar Kha'Zix Nunu Graves Lucian Zac Blitzcrank Olaf Fizz

@@ -1,0 +1,29 @@
+Data file: D:\Documents\GitHub\LoL-stats\data\champions_usage_master
+10 topics, 100 iterations, 20 words displayed per topic
+
+INFO:lda:n_documents: 958
+INFO:lda:vocab_size: 127
+INFO:lda:n_words: 803332
+INFO:lda:n_topics: 10
+INFO:lda:n_iter: 100
+INFO:lda:<0> log likelihood: -5461015
+INFO:lda:<10> log likelihood: -3653980
+INFO:lda:<20> log likelihood: -3451386
+INFO:lda:<30> log likelihood: -3401106
+INFO:lda:<40> log likelihood: -3373194
+INFO:lda:<50> log likelihood: -3361242
+INFO:lda:<60> log likelihood: -3353554
+INFO:lda:<70> log likelihood: -3349703
+INFO:lda:<80> log likelihood: -3348569
+INFO:lda:<90> log likelihood: -3341593
+INFO:lda:<99> log likelihood: -3340570
+Topic 0: Riven Veigar Xin Zhao Nidalee Rengar Irelia Vladimir Diana Vayne Katarina Renekton Hecarim LeBlanc Blitzcrank Nasus Tryndamere Jayce Poppy Gnar
+Topic 1: Rek'Sai Nidalee Lee Sin Gragas Elise Jarvan IV Evelynn Vi Sejuani Ekko Rengar Kha'Zix Nunu Zac Maokai Graves Nautilus Olaf Lucian
+Topic 2: Draven Kayle Mordekaiser Zac Graves Master Yi Jarvan IV Fizz Vi Cho'Gath Twisted Fate Zilean Morgana Sion Janna Annie Kalista Cassiopeia Shen
+Topic 3: Yasuo Lee Sin Zed Vayne Jax Thresh Ekko Lucian Quinn Master Yi Kha'Zix Shen Graves Vi Bard Rengar Gangplank Twitch Ezreal
+Topic 4: Rengar Katarina Tryndamere Talon Karthus Vel'Koz Kha'Zix Brand Wukong Gangplank Volibear Swain Fiora Darius Malzahar Vladimir Viktor Karma Jayce
+Topic 5: Kalista Graves Lucian Vayne Jinx Sivir Tristana Corki Ezreal Caitlyn Ashe Kog'Maw Urgot Twitch Lee Sin Vladimir Janna Thresh Varus
+Topic 6: Thresh Janna Alistar Morgana Braum Nautilus Bard Leona Annie Lulu Blitzcrank Nami Shen Tahm Kench Maokai Kennen Caitlyn Malphite Gragas
+Topic 7: Ahri LeBlanc Viktor Azir Twisted Fate Zed Orianna Cassiopeia Lulu Xerath Diana Lissandra Ezreal Kassadin Vladimir Fizz Varus Syndra Jayce
+Topic 8: Blitzcrank Annie Soraka Pantheon Fiddlesticks Vladimir Sion Leona Cho'Gath Nunu Shaco Tahm Kench Malphite Maokai Nautilus Janna Xin Zhao Nasus Morgana
+Topic 9: Irelia Gnar Hecarim Rumble Fizz Maokai Olaf Lulu Shen Renekton Lissandra Jax Kennen Sion Ryze Vladimir Malphite Gangplank Fiora
