@@ -1,4 +1,6 @@
-# from https://github.com/pseudonym117/Riot-Watcher
+# from github.com/pseudonym117/Riot-Watcher
+# file Riot-Watcher/riotwatcher/riotwatcher.py
+# last downloaded on 15th October 2015
 # with a few changes: search "CUSTOMISED"
 
 from collections import deque
@@ -244,6 +246,7 @@ class RiotWatcher:
         return True
 
     ### CUSTOMISED
+    # after function wait in file Riot-Watcher/riotwatcher/tests.py
     def wait(self):
         while not self.can_make_request():
             time.sleep(1)
