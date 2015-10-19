@@ -1,7 +1,8 @@
+import os
 import json
 
 import riotwatcher
-
+import data_path
 
 report_freq = 10
 
@@ -34,10 +35,8 @@ def store_champions_usage(filefrom, fileto, riot):
     :param riot:
     :return:
 
-    >>> from riotwatcher import RiotWatcher
-    >>> from data_path import test_store_champions_usage_data, test_store_champions_usage_result
-    >>> riot = RiotWatcher()
-    >>> store_champions_usage(test_store_champions_usage_data, test_store_champions_usage_result, riot)
+    >>> riot = riotwatcher.RiotWatcher()
+    >>> store_champions_usage(data_path.test_store_champions_usage_data, data_path.test_store_champions_usage_result, riot)
     10 done
     """
     with open(filefrom,'r') as ffrom:
@@ -47,7 +46,12 @@ def store_champions_usage(filefrom, fileto, riot):
         json.dump(champions_usage,fto)
 
 
-
+def champions_usage_draft(name, riot):
+    filefrom = os.path.join(data_path.summoner_ids_dir, name)
+    with open(filefrom, 'r') as ff:
+        summoner_ids = json.load(ff)
+    champions_usage = collect_champions_usage(riot, summoner_ids)
+    return champions_usage
 
 
 def setup_test_data():
