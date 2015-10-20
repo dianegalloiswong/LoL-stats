@@ -1,4 +1,4 @@
-import tkinter
+import Tkinter
 
 import run_lda
 
@@ -45,13 +45,13 @@ class Param:
         self.lbound = lbound
         self.ubound = ubound
 
-        self.label = tkinter.Label(parent, text=name, anchor='w')
+        self.label = Tkinter.Label(parent, text=name, anchor='w')
         self.label.grid(row=row,column=column, sticky='w')
 
-        self.var = tkinter.StringVar()
+        self.var = Tkinter.StringVar()
         if init is not None:
             self.var.set(init)
-        self.entry = tkinter.Entry(parent, textvariable=self.var, width=width,
+        self.entry = Tkinter.Entry(parent, textvariable=self.var, width=width,
                                    justify='right')
         if callback is not None:
             self.entry.bind("<Return>", callback)
@@ -68,16 +68,16 @@ class Param:
 
 class LDA_App:
     def __init__(self, parent=None):
-        self.root = tkinter.Tk(parent)
+        self.root = Tkinter.Tk(parent)
         self.root.title('LDA on masters')
 
-        self.lda_frame = tkinter.Frame(self.root)
+        self.lda_frame = Tkinter.Frame(self.root)
         self.lda_frame.grid()
 
-        self.lda_label = tkinter.Label(self.lda_frame, text="LDA parameters")
+        self.lda_label = Tkinter.Label(self.lda_frame, text="LDA parameters")
         self.lda_label.grid(row=0,column=0,sticky='EW')
 
-        self.lda_params_frame = tkinter.Frame(self.lda_frame)
+        self.lda_params_frame = Tkinter.Frame(self.lda_frame)
         self.lda_params_frame.grid(row=1,column=0,sticky='EW')
 
         param_row = Counter(init=0)
@@ -98,11 +98,11 @@ class LDA_App:
                                          callback=self.run_lda_callback)
 
 
-        lda_button = tkinter.Button(self.lda_frame, text="Run LDA",
+        lda_button = Tkinter.Button(self.lda_frame, text="Run LDA",
                                     command=self.run_lda)
         lda_button.grid(column=0, row=3)
-        self.lda_run_label_var = tkinter.StringVar()
-        self.lda_run_label = tkinter.Label(self.lda_frame, textvariable=self.lda_run_label_var)
+        self.lda_run_label_var = Tkinter.StringVar()
+        self.lda_run_label = Tkinter.Label(self.lda_frame, textvariable=self.lda_run_label_var)
         self.lda_run_label.grid(column=0, row=4,sticky='EW')
 
 

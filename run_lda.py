@@ -9,7 +9,7 @@ import lda
 import data_path
 
 
-def dict_to_inputs(summoners_to_stats:dict):
+def dict_to_inputs(summoners_to_stats):
     with open(data_path.file_champion_id_to_name, 'r') as f:
         id_to_name = json.load(f)
     with open(data_path.columns_to_id, 'r') as f:
