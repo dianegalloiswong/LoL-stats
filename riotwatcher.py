@@ -1,3 +1,4 @@
+# Copyright (c) 2014 AG Stephan
 # from github.com/pseudonym117/Riot-Watcher
 # file Riot-Watcher/riotwatcher/riotwatcher.py
 # last downloaded on 15th October 2015
