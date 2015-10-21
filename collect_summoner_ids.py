@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import json
 import unittest
@@ -5,6 +6,8 @@ import abc
 
 import riotwatcher
 import data_path
+
+
 
 default_report_freq = 100
 default_summoner_id = 30890339
@@ -61,7 +64,7 @@ class SummonerIdsCollector(DataCollector):
                         pending_match_ids.append(m_id)
                 if 5 * len(match_ids) > n_ids_min:
                     break
-            pending_summoner_ids.clear()
+            del pending_summoner_ids[:]
             for m_id in pending_match_ids:
                 for s_id in self.match_id_to_summoner_ids(m_id):
                     if s_id not in summoner_ids:
@@ -71,7 +74,7 @@ class SummonerIdsCollector(DataCollector):
                         pending_summoner_ids.append(s_id)
                 if len(summoner_ids) > n_ids_min:
                     break
-            pending_match_ids.clear()
+            del pending_match_ids[:]
         return summoner_ids
 
 
@@ -205,6 +208,4 @@ class TestSummonerIds(unittest.TestCase):
 if __name__ == "__main__":
 
     unittest.main()
-
-
 

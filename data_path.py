@@ -1,6 +1,10 @@
 import os
 
-data_dir = os.path.join(os.path.dirname(__file__),'data')
+main_dir = os.path.dirname(__file__)
+
+riot_api_key = os.path.join(main_dir, 'riot_api_key')
+
+data_dir = os.path.join(main_dir,'data')
 
 static_data_dir = os.path.join(data_dir,'static')
 file_champion_id_to_name = os.path.join(static_data_dir,'champion_id_to_name')

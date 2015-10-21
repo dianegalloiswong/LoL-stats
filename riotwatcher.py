@@ -9,7 +9,9 @@ import time
 import requests
 
 ### CUSTOMISED
-with open('riot_api_key','r') as f:
+import data_path
+
+with open(data_path.riot_api_key,'r') as f:
     import json
     my_key = json.load(f)
 ###
