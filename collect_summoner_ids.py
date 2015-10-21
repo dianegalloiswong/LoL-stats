@@ -13,23 +13,25 @@ default_report_freq = 100
 default_summoner_id = 30890339
 default_n_ids_min = 10
 
+default_summoner_ids_directory = data_path.summoner_ids_dir
+default_champions_usage_directory = data_path.champions_usage_dir
 
 
 class DataCollector:
     __metaclass__ = abc.ABCMeta
 
-    def __init__(self, riot=None, callback=None, report_freq=default_report_freq):
+    def __init__(self, riot=None, report_callback=None, report_freq=default_report_freq):
         if riot is None:
             riot = riotwatcher.RiotWatcher()
         self.riot = riot
-        if callback is None:
-            callback = print
-        self.callback = callback
+        if report_callback is None:
+            report_callback = print
+        self.report_callback = report_callback
         self.report_freq = report_freq
 
 class SummonerIdsCollector(DataCollector):
-    def __init__(self, riot=None, callback=None, report_freq=default_report_freq):
-        DataCollector.__init__(self, riot=riot, callback=callback, report_freq=report_freq)
+    def __init__(self, riot=None, report_callback=None, report_freq=default_report_freq):
+        DataCollector.__init__(self, riot=riot, report_callback=report_callback, report_freq=report_freq)
 
     def match_id_to_summoner_ids(self, match_id):
         self.riot.wait()
@@ -70,7 +72,7 @@ class SummonerIdsCollector(DataCollector):
                     if s_id not in summoner_ids:
                         summoner_ids.add(s_id)
                         if len(summoner_ids) % self.report_freq == 0:
-                            self.callback('Collecting summoner ids: {}/{} done'.format(len(summoner_ids), n_ids_min))
+                            self.report_callback('Collecting summoner ids: {}/{} done'.format(len(summoner_ids), n_ids_min))
                         pending_summoner_ids.append(s_id)
                 if len(summoner_ids) > n_ids_min:
                     break
@@ -83,7 +85,7 @@ class SummonerIdsCollector(DataCollector):
             name = 'init{}min{}'.format(initial_id, n_min)
         data = self.collect_summoner_ids(n_min, initial_id)
         data = list(data)
-        summoner_ids = SummonerIds(initial_id, n_min, name, data)
+        summoner_ids = SummonerIds.Cons(initial_id, n_min, name, data)
         return summoner_ids
 
 
@@ -102,75 +104,107 @@ def collect_master_summoner_ids():
 
 
 
-
-class DataSet:
+    
+class DataWrapper:
     __metaclass__ = abc.ABCMeta
-
-    def __init__(self, name, initial_summoner_id, n_ids_min, data):
-        self.name = name
-        self.filename = self.name_to_filename(name)
-        self.initial_summoner_id = initial_summoner_id
-        self.n_ids_min = n_ids_min
+    
+    def __init__(self, infos, data, name):
+        self.infos = infos
         self.data = data
+        self.name = name
 
     @staticmethod
     @abc.abstractmethod
-    def directory():
-        return ''
+    def default_directory():
+        raise NotImplementedError
 
+    def get_info(self, key):
+        return self.infos.get(key)
+
+
+class SummonerIds(DataWrapper):
+    def __init__(self, dic, data):
+        DataWrapper.__init__(self, dic, data, dic['name'])
+
+    @staticmethod
+    def default_directory():
+        return data_path.summoner_ids_dir
+    
     @classmethod
-    def name_to_filename(cls, name):
-        filename = os.path.join(cls.directory(), name)
+    def Cons(cls, initial_summoner_id, n_summoners_required, name, data):
+        d = {'class': 'SummonerIds',
+             'n_summoners': len(data),
+             'name': name,
+             'initial_summoner_id': initial_summoner_id,
+             'n_summoners_required': n_summoners_required}
+        si = SummonerIds(d, data)
+        return si
+        
+
+class DataFilesHandler:
+    def __init__(self, directory=None):
+        self.directory = directory
+
+    class UndefinedFilenameError(Exception):
+        pass
+    
+    def decide_filename(self, default_name, default_directory,
+                        enforce_name, enforce_directory, enforce_fullname):
+        if enforce_fullname is not None:
+            return enforce_fullname
+        name = default_name
+        directory = default_directory
+        if enforce_name is not None:
+            name = enforce_name
+        if self.directory is not None:
+            directory = self.directory
+        if enforce_directory is not None:
+            directory = enforce_directory
+        if name is None or directory is None:
+            raise self.UndefinedFilenameError
+        return os.path.join(directory, name)
+
+    def dump(self, datawrapper, enforce_name=None, enforce_directory=None, enforce_fullname=None):
+        filename = self.decide_filename(datawrapper.name, datawrapper.default_directory,
+                                        enforce_name, enforce_directory, enforce_fullname)
+        s1 = json.dumps(datawrapper.infos)
+        s2 = json.dumps(datawrapper.data)
+        with open(filename, 'w') as f:
+            f.write(s1+'\n'+s2)
         return filename
 
-    @classmethod
-    @abc.abstractmethod
-    def from_dict_and_data(cls, dic, data):
-        raise NotImplementedError
-
-    @classmethod
-    def load(cls, name):
-        filename = cls.name_to_filename(name)
+    def readlines(self, name=None, enforce_directory=None, fullname=None):
+        filename = self.decide_filename(None, None, name, enforce_directory, fullname)
         with open(filename, 'r') as f:
-            s = f.readline()
-            dic = json.loads(s)
-            data = json.load(f)
-        x = cls.from_dict_and_data(dic, data)
-        return x
+            s1 = f.readline()
+            s2 = f.readline()
+        return s1, s2
 
-    @abc.abstractmethod
-    def to_dict(self):
-        raise NotImplementedError
+    def load_cls(self, cls, name=None, enforce_directory=None, fullname=None):
+        s1, s2 = self.readlines(name=name, enforce_directory=enforce_directory, fullname=fullname)
+        dic = json.loads(s1)
+        data = json.loads(s2)
+        return cls(dic, data)
 
-    def dump(self):
-        d = self.to_dict()
-        s = json.dumps(self.data)
-        with open(self.filename, 'w') as f:
-            json.dump(d, f)
-            f.write('\n' + s)
+    def load_infos(self, name=None, enforce_directory=None, fullname=None):
+        s1, s2 = self.readlines(name=name, enforce_directory=enforce_directory, fullname=fullname)
+        return json.loads(s1)
 
+def make_ClsFilesHandler(cls):
+    class ClsFilesHandler(DataFilesHandler):
+        def __init__(self, directory=None):
+            DataFilesHandler.__init__(self, directory=directory)
+            if self.directory is None:
+                self.directory = cls.default_directory()
 
-class SummonerIds(DataSet):
-    def __init__(self, initial_summoner_id, n_ids_min, name, data):
-        DataSet.__init__(self, name, initial_summoner_id, n_ids_min, data)
-        self.actual_n_ids = len(data)
+        def load(self, name=None, enforce_directory=None, fullname=None):
+            return self.load_cls(cls, name=name, enforce_directory=enforce_directory, fullname=fullname)
 
-    @staticmethod
-    def directory():
-        return data_path.summoner_ids_dir
+    return ClsFilesHandler
 
-    @classmethod
-    def from_dict_and_data(cls, dic, data):
-        summoner_ids = SummonerIds(dic['initial_summoner_id'], dic['n_ids_min'], dic['name'], data)
-        return summoner_ids
+SummonerIdsFilesHandler = make_ClsFilesHandler(SummonerIds)
 
 
-    def to_dict(self):
-        d = {'actual_n_ids': self.actual_n_ids,
-             'name': self.name,
-             'initial_summoner_id': self.initial_summoner_id,
-             'n_ids_min': self.n_ids_min}
-        return d
 
 
 class TestCollectSummonerIds(unittest.TestCase):
@@ -185,25 +219,27 @@ class TestCollectSummonerIds(unittest.TestCase):
     def test(self):
         n_min = 30
         self.reports = []
-        collector = SummonerIdsCollector(report_freq=10, callback=self.send_report)
+        collector = SummonerIdsCollector(report_freq=10, report_callback=self.send_report)
         summoner_ids = collector.make_summoner_ids(n_min=n_min, name=self.name)
-        self.assertGreaterEqual(summoner_ids.actual_n_ids, n_min)
+        self.assertGreaterEqual(summoner_ids.get_info('n_summoners'), n_min)
         for i in [1,2,3]:
             j = 10*i
             self.assertEqual(self.reports.pop(0), 'Collecting summoner ids: {}/{} done'.format(j, n_min))
 
+class TestSummonerIdsFilesHandler(unittest.TestCase):
 
-class TestSummonerIds(unittest.TestCase):
+   name = 'test'
 
-    name = 'test'
+   def test(self):
+       collector = SummonerIdsCollector()
+       summoner_ids = collector.make_summoner_ids(name=self.name)
+       h = SummonerIdsFilesHandler()
+       h.dump(summoner_ids)
+       summoner_ids1 = h.load(self.name)
+       self.assertEqual(summoner_ids.infos, summoner_ids1.infos)
+       self.assertEqual(summoner_ids.data, summoner_ids1.data)
 
-    def test(self):
-        collector = SummonerIdsCollector()
-        summoner_ids = collector.make_summoner_ids(name=self.name)
-        summoner_ids.dump()
-        summoner_ids1 = SummonerIds.load(self.name)
-        self.assertEqual(summoner_ids.to_dict(), summoner_ids1.to_dict())
-        self.assertEqual(summoner_ids.data, summoner_ids1.data)
+
 
 if __name__ == "__main__":
 
