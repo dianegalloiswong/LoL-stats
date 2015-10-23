@@ -1,6 +1,7 @@
+from __future__ import with_statement
 import gensim
 from gensim.corpora.dictionary import Dictionary
-from __future__ import with_statement
+
 
 from collections import Mapping, defaultdict
 import sys
@@ -17,6 +18,8 @@ This class is a gensim dictionary whose doc2bow method is adapted to this.
 
 
 class MyDictionary(gensim.corpora.dictionary.Dictionary):
+
+
 
     def doc2bow(self, document, allow_update=False, return_missing=False):
         """

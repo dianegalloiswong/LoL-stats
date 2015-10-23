@@ -4,7 +4,7 @@ import riotwatcher
 import data_path
 
 
-def get_id_to_name(riot:riotwatcher.RiotWatcher):
+def get_id_to_name(riot):
     champs_by_id = riot.static_get_champion_list(data_by_id=True)['data']
     id_to_name = dict()
     for champ in champs_by_id:

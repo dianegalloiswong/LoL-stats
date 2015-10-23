@@ -3,8 +3,28 @@ import json
 
 import riotwatcher
 import data_path
+from collect_summoner_ids import DataWrapper
 
 report_freq = 10
+
+class ChampionsUsage(DataWrapper):
+    """
+    This implements champion usage as a dictionary of dictionaries (summoner ID/document).
+    """
+
+    def __init__(self, dic, data):
+        DataWrapper.__init__(self, dic, data, dic['name'])
+
+    @staticmethod
+    def default_directory():
+        return data_path.champions_usage_dir
+
+    def __iter__(self):
+        for summ in self.data:
+            yield self.data[summ]
+
+
+
 
 def get_champions_usage_one_summoner(riot, summoner_id):
     riot.wait()
