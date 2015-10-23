@@ -12,8 +12,10 @@ class ChampionsUsage(DataWrapper):
     This implements champion usage as a dictionary of dictionaries (summoner ID/document).
     """
 
-    def __init__(self, dic, data):
+    def __init__(self, dic, data, use_names=False):
         DataWrapper.__init__(self, dic, data, dic['name'])
+        if use_names:
+            self.use_champion_names()
 
     @staticmethod
     def default_directory():
@@ -23,8 +25,17 @@ class ChampionsUsage(DataWrapper):
         for summ in self.data:
             yield self.data[summ]
 
+    def use_champion_names(self):
+        for summ in self.data:
+            self.data[summ]=translate_dict(self.data[summ])
 
 
+
+def translate_dict(dic):
+        with open(data_path.file_champion_id_to_name) as fdic:
+            id_to_name = json.load(fdic)
+        l = [(id_to_name[ch_id], dic[ch_id]) for ch_id in dic if ch_id != '0']
+        return dict(l)
 
 def get_champions_usage_one_summoner(riot, summoner_id):
     riot.wait()
