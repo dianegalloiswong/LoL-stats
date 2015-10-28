@@ -8,29 +8,38 @@ import riotwatcher
 import data_path
 
 
-
 default_report_freq = 100
+default_report_callback = print
+
 default_summoner_id = 30890339
 default_n_ids_min = 10
 
 default_summoner_ids_directory = data_path.summoner_ids_dir
 default_champions_usage_directory = data_path.champions_usage_dir
 
+n_summoners_key = 'n_summoners'
+name_key = 'name'
+class_key = 'class'
+initial_summoner_id_key = 'initial_summoner_id'
+n_summoners_required_key = 'n_summoners_required'
+tier_key = 'tier'
+
 
 class DataCollector:
     __metaclass__ = abc.ABCMeta
 
-    def __init__(self, riot=None, report_callback=None, report_freq=default_report_freq):
+    def __init__(self, riot=None, report_callback=default_report_callback, report_freq=default_report_freq):
         if riot is None:
             riot = riotwatcher.RiotWatcher()
         self.riot = riot
         if report_callback is None:
-            report_callback = print
+            report_callback = default_report_callback
         self.report_callback = report_callback
         self.report_freq = report_freq
 
+
 class SummonerIdsCollector(DataCollector):
-    def __init__(self, riot=None, report_callback=None, report_freq=default_report_freq):
+    def __init__(self, riot=None, report_callback=default_report_callback, report_freq=default_report_freq):
         DataCollector.__init__(self, riot=riot, report_callback=report_callback, report_freq=report_freq)
 
     def match_id_to_summoner_ids(self, match_id):
@@ -79,7 +88,6 @@ class SummonerIdsCollector(DataCollector):
             del pending_match_ids[:]
         return summoner_ids
 
-
     def make_summoner_ids(self, initial_id=default_summoner_id, n_min=default_n_ids_min, name=None):
         if name is None:
             name = 'init{}min{}'.format(initial_id, n_min)
@@ -88,26 +96,20 @@ class SummonerIdsCollector(DataCollector):
         summoner_ids = SummonerIds.Cons(initial_id, n_min, name, data)
         return summoner_ids
 
+    def make_summoner_ids_master(self, name=None):
+        if name is None:
+            name = 'master'
+        self.riot.wait()
+        resp = self.riot.get_master()
+        data = [int(entry['playerOrTeamId']) for entry in resp['entries']]
+        summoner_ids = SummonerIds.Cons_tier('master', name, data)
+        return summoner_ids
+#endclass SummonerIdsCollector
 
 
-
-def collect_master_summoner_ids():
-    riot = riotwatcher.RiotWatcher()
-    riot.wait()
-    resp = riot.get_master()
-    ids = [int(entry['playerOrTeamId']) for entry in resp['entries']]
-    print(len(ids))
-    print(ids)
-    with open(data_path.summoner_ids_master, 'w') as f:
-        json.dump(ids, f)
-
-
-
-
-    
 class DataWrapper:
     __metaclass__ = abc.ABCMeta
-    
+
     def __init__(self, infos, data, name):
         self.infos = infos
         self.data = data
@@ -121,6 +123,10 @@ class DataWrapper:
     def get_info(self, key):
         return self.infos.get(key)
 
+    @property
+    def get_n_summoners(self):
+        return self.get_info(n_summoners_key)
+
 
 class SummonerIds(DataWrapper):
     def __init__(self, dic, data):
@@ -129,17 +135,28 @@ class SummonerIds(DataWrapper):
     @staticmethod
     def default_directory():
         return data_path.summoner_ids_dir
-    
+
     @classmethod
     def Cons(cls, initial_summoner_id, n_summoners_required, name, data):
-        d = {'class': 'SummonerIds',
-             'n_summoners': len(data),
-             'name': name,
-             'initial_summoner_id': initial_summoner_id,
-             'n_summoners_required': n_summoners_required}
+        d = {class_key: cls.__name__,
+             n_summoners_key: len(data),
+             name_key: name,
+             initial_summoner_id_key: initial_summoner_id,
+             n_summoners_required_key: n_summoners_required}
         si = SummonerIds(d, data)
         return si
-        
+
+    @classmethod
+    def Cons_tier(cls, tier, name, data, n_summoners_required=None):
+        d = {class_key: cls.__name__,
+             n_summoners_key: len(data),
+             name_key: name,
+             tier_key: tier}
+        if n_summoners_required is not None:
+            d[n_summoners_required_key] = n_summoners_required
+        si = SummonerIds(d, data)
+        return si
+
 
 class DataFilesHandler:
     def __init__(self, directory=None):
@@ -147,7 +164,7 @@ class DataFilesHandler:
 
     class UndefinedFilenameError(Exception):
         pass
-    
+
     def decide_filename(self, default_name, default_directory,
                         enforce_name, enforce_directory, enforce_fullname):
         if enforce_fullname is not None:
@@ -190,6 +207,7 @@ class DataFilesHandler:
         s1, s2 = self.readlines(name=name, enforce_directory=enforce_directory, fullname=fullname)
         return json.loads(s1)
 
+
 def make_ClsFilesHandler(cls):
     class ClsFilesHandler(DataFilesHandler):
         def __init__(self, directory=None):
@@ -202,9 +220,23 @@ def make_ClsFilesHandler(cls):
 
     return ClsFilesHandler
 
+
 SummonerIdsFilesHandler = make_ClsFilesHandler(SummonerIds)
 
 
+def collect_master_summoner_ids():
+    # riot = riotwatcher.RiotWatcher()
+    # riot.wait()
+    # resp = riot.get_master()
+    # ids = [int(entry['playerOrTeamId']) for entry in resp['entries']]
+    # print(len(ids))
+    # print(ids)
+    # with open(data_path.summoner_ids_master, 'w') as f:
+    #     json.dump(ids, f)
+    collector = SummonerIdsCollector()
+    summoner_ids = collector.make_summoner_ids_master()
+    h = SummonerIdsFilesHandler()
+    h.dump(summoner_ids)
 
 
 class TestCollectSummonerIds(unittest.TestCase):
@@ -226,22 +258,21 @@ class TestCollectSummonerIds(unittest.TestCase):
             j = 10*i
             self.assertEqual(self.reports.pop(0), 'Collecting summoner ids: {}/{} done'.format(j, n_min))
 
+
 class TestSummonerIdsFilesHandler(unittest.TestCase):
 
-   name = 'test'
+    name = 'test'
 
-   def test(self):
-       collector = SummonerIdsCollector()
-       summoner_ids = collector.make_summoner_ids(name=self.name)
-       h = SummonerIdsFilesHandler()
-       h.dump(summoner_ids)
-       summoner_ids1 = h.load(self.name)
-       self.assertEqual(summoner_ids.infos, summoner_ids1.infos)
-       self.assertEqual(summoner_ids.data, summoner_ids1.data)
-
+    def test(self):
+        collector = SummonerIdsCollector()
+        summoner_ids = collector.make_summoner_ids(name=self.name)
+        h = SummonerIdsFilesHandler()
+        h.dump(summoner_ids)
+        summoner_ids1 = h.load(self.name)
+        self.assertEqual(summoner_ids.infos, summoner_ids1.infos)
+        self.assertEqual(summoner_ids.data, summoner_ids1.data)
 
 
 if __name__ == "__main__":
 
     unittest.main()
-
