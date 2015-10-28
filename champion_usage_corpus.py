@@ -57,6 +57,11 @@ class ChampionUsageCorpus(interfaces.CorpusABC):
     def __len__(self):
         if not hasattr(self, 'length'):
             # cache the corpus length
-            self.length = sum(1 for _ in self.get_texts())
+            if isinstance(self.input, ChampionsUsage):
+                ns = self.input.get_n_summoners
+                if ns is not None:
+                    self.length = ns
+            else:
+                self.length = sum(1 for _ in self.get_texts())
         return self.length
 
