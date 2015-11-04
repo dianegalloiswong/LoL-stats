@@ -1,5 +1,9 @@
 riot_api_key
 draft*
+data/summoner_ids/*
+!data/summoner_ids/test
+data/lda_results/*
+!data/lda_results/misc
 test_data/*
 !test_data/test_store_champions_usage_data
 .idea/

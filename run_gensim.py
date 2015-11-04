@@ -16,5 +16,4 @@ def make_corpus_master():
 if __name__ == '__main__':
     corpus = make_corpus_master()
     lda = MyLdaModel(corpus, iterations=10, num_topics=5)
-    print(lda.infos)
-    lda.display_topics()
+    lda.display()

@@ -1,0 +1,301 @@
+number of iterations: 1000 name: test_gensim_masters number of topics: 10
+
+Topic 0: Kalista(7.4) Vayne(5.3) Sivir(4.8) Lee Sin(4.7) Jinx(4.7) Lucian(4.4) Graves(3.9) Tristana(3.7) Corki(3.1) Thresh(2.5)
+
+Topic 1: Janna(5.5) Ahri(5.2) Thresh(4.9) LeBlanc(3.4) Morgana(3.4) Braum(2.8) Nautilus(2.4) Yasuo(2.3) Nidalee(2.3) Cassiopeia(2.3)
+
+Topic 2: Thresh(13.3) Janna(4.3) Alistar(3.5) Morgana(3.0) Lee Sin(2.9) Gnar(2.9) Irelia(2.8) Nautilus(2.7) Braum(2.2) Graves(2.2)
+
+Topic 3: Graves(7.0) Kalista(4.8) Lucian(4.4) Jinx(4.1) Vayne(4.1) Ahri(3.5) Tristana(3.1) Caitlyn(2.9) Corki(2.6) LeBlanc(2.5)
+
+Topic 4: Irelia(8.3) Yasuo(6.2) Gnar(4.7) Fizz(3.3) Janna(2.7) Blitzcrank(2.4) Thresh(2.3) Hecarim(2.3) Rumble(2.3) Maokai(2.3)
+
+Topic 5: Rengar(8.3) Fizz(4.2) Thresh(3.7) Gragas(3.5) Rek'Sai(3.4) Kha'Zix(3.0) Nidalee(2.7) Bard(2.4) Viktor(2.4) Hecarim(2.3)
+
+Topic 6: Riven(9.1) Zed(3.8) Gnar(3.2) Rengar(2.9) Hecarim(2.6) Irelia(2.4) Ahri(2.3) Thresh(2.1) Yasuo(2.1) Gragas(1.8)
+
+Topic 7: Lee Sin(8.0) Nidalee(6.5) Rek'Sai(5.5) Ahri(3.5) Twisted Fate(2.6) Viktor(2.5) Gragas(2.4) Elise(2.1) Zed(2.0) Azir(2.0)
+
+Topic 8: Rek'Sai(6.6) Thresh(5.3) Graves(4.5) Lucian(3.9) Sivir(2.7) Katarina(2.6) Janna(2.4) Kalista(2.2) Vayne(2.2) Alistar(2.1)
+
+Topic 9: Graves(5.9) Kalista(5.2) Lucian(4.9) Sivir(4.9) Irelia(4.4) Jinx(3.9) Vayne(3.8) Corki(3.5) Tristana(2.3) Riven(2.3)
+
+
+
+
+number of iterations: 1000 name: test_gensim_masters number of topics: 5
+
+Topic 0: Thresh(7.2) Lee Sin(5.4) Rek'Sai(4.9) Nidalee(3.2) Gnar(3.1) Irelia(3.1) Janna(2.9) Alistar(2.4) Nautilus(2.4) Morgana(2.1)
+
+Topic 1: Riven(5.5) Ahri(3.6) Nidalee(3.5) Thresh(2.5) Graves(2.4) Lee Sin(2.2) Rek'Sai(2.1) Twisted Fate(2.1) Yasuo(2.1) Katarina(2.0)
+
+Topic 2: Ahri(5.4) Thresh(4.5) Janna(4.4) Lee Sin(3.2) Viktor(3.1) Twisted Fate(2.6) Blitzcrank(2.5) Gragas(2.4) Rek'Sai(2.0) Yasuo(2.0)
+
+Topic 3: Vayne(9.4) Graves(7.2) Kalista(7.0) Lucian(6.6) Jinx(5.6) Sivir(4.7) Tristana(4.6) Corki(3.5) Ashe(2.3) Caitlyn(1.9)
+
+Topic 4: Kalista(5.1) Graves(4.4) Lucian(3.8) Jinx(3.0) Zed(2.9) Sivir(2.9) Ahri(2.7) Corki(2.6) Irelia(2.4) LeBlanc(2.4)
+
+
+
+
+number of iterations: 5000 name: test_gensim_masters number of topics: 5
+
+Topic 0: Thresh(8.5) Janna(3.7) Alistar(3.4) Blitzcrank(3.1) Morgana(3.0) Annie(2.8) Nautilus(2.7) Braum(2.3) Viktor(2.2) Ahri(2.2)
+
+Topic 1: Rek'Sai(10.9) Lee Sin(6.3) Nidalee(5.7) Gragas(4.3) Thresh(3.2) Elise(2.8) Jarvan IV(2.8) Graves(2.4) Vi(2.4) Jinx(2.1)
+
+Topic 2: Thresh(7.7) Janna(4.7) Lulu(2.9) Rengar(2.8) Irelia(2.4) Morgana(2.4) Fizz(2.3) Alistar(2.1) Nautilus(2.1) Braum(2.1)
+
+Topic 3: Riven(4.4) Ahri(4.1) Irelia(3.8) Zed(3.4) Gnar(3.3) Lucian(2.9) LeBlanc(2.5) Azir(2.5) Graves(2.4) Viktor(2.3)
+
+Topic 4: Graves(6.2) Kalista(5.6) Vayne(5.1) Lee Sin(4.9) Lucian(4.4) Sivir(3.5) Yasuo(3.3) Jinx(2.9) Ahri(2.9) Corki(2.7)
+
+
+
+
+number of iterations: 9999 name: test_gensim_masters number of topics: 5
+
+Topic 0: Yasuo(6.5) Irelia(6.0) Gnar(4.4) Hecarim(4.3) Rumble(4.2) Fizz(2.7) Maokai(2.6) Ryze(2.1) Talon(2.0) Akali(2.0)
+
+Topic 1: Ahri(3.8) Nidalee(3.7) Viktor(3.0) LeBlanc(3.0) Zed(2.8) Lee Sin(2.7) Azir(2.6) Rek'Sai(2.5) Yasuo(2.4) Twisted Fate(2.2)
+
+Topic 2: Thresh(10.8) Janna(4.9) Alistar(3.4) Morgana(2.9) Nautilus(2.9) Braum(2.9) Blitzcrank(2.4) Irelia(2.4) Graves(2.3) Lee Sin(2.1)
+
+Topic 3: Kalista(5.6) Lee Sin(5.5) Graves(4.9) Vayne(4.8) Lucian(4.6) Jinx(3.5) Sivir(3.5) Thresh(3.1) Riven(2.8) Tristana(2.8)
+
+Topic 4: Rek'Sai(8.7) Rengar(6.6) Irelia(3.2) Hecarim(3.0) Kayle(2.9) Lulu(2.5) Fizz(2.5) Evelynn(2.5) Fiddlesticks(2.5) Gragas(2.2)
+
+
+
+number of iterations: 99999 name: test_gensim_masters number of topics: 5
+
+Topic 0: Graves(4.0) Kalista(3.5) Lucian(3.4) Vayne(3.1) Thresh(3.0) Lee Sin(3.0) Irelia(2.9) Jinx(2.6) Riven(2.4) Sivir(2.4)
+
+Topic 1: Talon(4.6) Draven(4.6) Katarina(4.0) Gnar(3.7) Rumble(3.6) Hecarim(3.1) Veigar(2.8) Kha'Zix(2.7) Viktor(2.5) Maokai(2.5)
+
+Topic 2: Fiddlesticks(3.1) Akali(2.7) Viktor(2.6) Rek'Sai(2.6) Sion(2.4) Sivir(2.4) Cho'Gath(2.3) Kayle(2.3) Orianna(1.9) Bard(1.9)
+
+Topic 3: Thresh(9.6) Janna(6.0) Lee Sin(5.7) Rek'Sai(4.8) Alistar(3.4) Morgana(3.1) Braum(2.9) Nautilus(2.7) Nidalee(2.6) Annie(2.4)
+
+Topic 4: Ahri(6.9) Nidalee(5.6) Azir(4.9) LeBlanc(4.5) Twisted Fate(4.3) Viktor(3.8) Zed(3.5) Lulu(2.3) Cassiopeia(2.2) Xerath(2.2)
+
+
+
+
+number of iterations: 99999 name: test_gensim_masters number of topics: 10
+
+Topic 0: Rek'Sai(8.0) Irelia(4.4) Lee Sin(3.7) Nidalee(3.3) Gragas(2.8) Gnar(2.4) Maokai(2.3) Graves(2.1) Hecarim(2.1) Fizz(2.1)
+
+Topic 1: Yasuo(6.8) Ahri(6.4) Azir(4.5) Zed(4.0) Viktor(3.7) LeBlanc(3.2) Twisted Fate(3.0) Lee Sin(2.4) Kalista(2.1) Vladimir(2.1)
+
+Topic 2: Nidalee(11.8) Lee Sin(7.4) Gragas(3.0) Rek'Sai(2.5) Olaf(2.4) Lucian(2.4) Vayne(2.3) Tristana(2.2) Kalista(2.0) Rumble(2.0)
+
+Topic 3: Kalista(7.9) Irelia(6.2) Lucian(5.6) Graves(4.3) Gnar(4.0) Sivir(3.7) Thresh(3.0) Vayne(2.8) Corki(2.7) Jinx(2.5)
+
+Topic 4: Rengar(4.8) Ahri(3.7) LeBlanc(3.6) Twisted Fate(3.3) Lucian(3.1) Gnar(2.8) Kayle(2.7) Graves(2.7) Lee Sin(2.6) Nidalee(2.1)
+
+Topic 5: Thresh(7.2) Janna(4.9) Graves(3.5) Riven(3.4) Vayne(3.2) Lee Sin(2.8) Jinx(2.8) Kalista(2.7) Alistar(2.6) Morgana(2.5)
+
+Topic 6: Thresh(9.5) Graves(4.1) Lee Sin(3.9) Lucian(3.6) Vayne(3.4) Kalista(2.8) Rek'Sai(2.6) Ezreal(2.6) Jinx(2.5) Corki(2.5)
+
+Topic 7: Lee Sin(9.8) Rek'Sai(5.2) Gragas(5.0) Nidalee(4.4) Rengar(4.3) Annie(3.5) Elise(2.5) Twisted Fate(2.1) Jarvan IV(1.8) Thresh(1.7)
+
+Topic 8: Tryndamere(9.8) Rengar(6.2) Talon(5.9) Rek'Sai(5.5) Blitzcrank(3.5) Gnar(3.4) Karthus(3.1) Corki(2.3) Graves(2.0) Katarina(1.9)
+
+Topic 9: Fizz(4.0) Riven(3.7) Gnar(3.7) Kha'Zix(3.4) Graves(3.2) Hecarim(3.1) Irelia(2.7) Ryze(2.5) Veigar(2.2) Vladimir(2.2)
+
+
+
+number of iterations: 100000 name: test_gensim_masters number of topics: 20
+
+Topic 0: Ahri(7.0) Graves(3.8) Azir(3.7) Viktor(3.7) Ezreal(3.5) LeBlanc(3.4) Thresh(2.7) Yasuo(2.7) Lee Sin(2.6) Lucian(2.4)
+
+Topic 1: Rek'Sai(11.7) Maokai(4.0) Lee Sin(3.9) Gragas(3.1) Gnar(2.8) Draven(2.4) Rengar(2.4) Janna(2.3) Vi(2.2) Nautilus(2.2)
+
+Topic 2: Katarina(14.0) Riven(6.0) Ahri(5.0) Brand(3.9) Soraka(2.3) Annie(2.2) Zed(2.1) Hecarim(1.9) Azir(1.9) Vayne(1.9)
+
+Topic 3: Lee Sin(7.8) Rek'Sai(4.9) Nidalee(4.0) Viktor(3.7) Thresh(3.2) Gragas(3.1) Twisted Fate(3.0) Riven(2.7) Azir(2.7) Ekko(2.6)
+
+Topic 4: Thresh(8.6) Yasuo(5.7) Irelia(4.5) Gnar(4.4) Zed(3.4) Blitzcrank(2.9) Alistar(2.6) Fizz(2.5) Hecarim(1.9) Janna(1.9)
+
+Topic 5: Rek'Sai(5.9) Thresh(5.8) Vayne(4.5) Kalista(4.0) Draven(3.1) Graves(2.9) Vladimir(2.6) Tristana(2.1) Sivir(2.1) Rumble(2.0)
+
+Topic 6: Kalista(7.9) Corki(6.0) Sivir(5.8) Graves(5.5) Lucian(5.5) Vayne(4.2) Tristana(4.2) Jinx(3.0) Rengar(2.6) Ezreal(2.4)
+
+Topic 7: Ahri(9.6) Yasuo(6.6) LeBlanc(4.6) Zed(3.9) Cassiopeia(3.5) Viktor(3.5) Orianna(3.0) Twisted Fate(2.7) Riven(2.3) Syndra(2.3)
+
+Topic 8: Thresh(12.5) Janna(9.1) Morgana(4.9) Alistar(4.6) Braum(4.3) Nautilus(4.2) Bard(3.1) Lulu(2.6) Ahri(2.4) Annie(2.4)
+
+Topic 9: Lucian(7.5) Kalista(7.1) Thresh(6.6) Jinx(6.0) Vayne(5.8) Sivir(4.1) Graves(4.0) Tristana(3.1) Twisted Fate(2.6) Lee Sin(2.6)
+
+Topic 10: Riven(36.7) Irelia(4.8) Xin Zhao(4.5) Blitzcrank(3.1) Hecarim(2.8) Leona(2.3) Pantheon(2.2) Lee Sin(1.9) Gnar(1.9) Cho'Gath(1.8)
+
+Topic 11: Olaf(4.9) Nidalee(4.7) Hecarim(4.5) Irelia(4.4) Annie(4.2) Zed(3.2) Ahri(2.9) Viktor(2.6) LeBlanc(2.6) Lulu(2.5)
+
+Topic 12: Nidalee(5.9) Ahri(3.8) Lucian(3.1) Graves(3.0) Lee Sin(2.7) Nautilus(2.4) Volibear(2.3) Twisted Fate(2.3) Kalista(2.1) Yasuo(1.9)
+
+Topic 13: Lee Sin(11.8) Ahri(3.5) Rumble(2.9) Irelia(2.6) Gangplank(2.5) Tryndamere(2.5) Hecarim(2.5) LeBlanc(2.3) Gnar(2.3) Graves(2.3)
+
+Topic 14: Lee Sin(6.0) Rek'Sai(4.7) Gragas(4.5) Vi(3.5) Jarvan IV(3.3) Nidalee(3.2) Ahri(2.4) Viktor(2.4) Sejuani(2.3) Rengar(2.3)
+
+Topic 15: Rengar(13.0) Nidalee(7.2) Karthus(4.0) LeBlanc(2.9) Fizz(2.8) Zed(2.7) Diana(2.5) Janna(2.5) Kha'Zix(1.8) Hecarim(1.8)
+
+Topic 16: Kayle(24.1) Fiddlesticks(13.8) Veigar(9.9) Sion(6.8) Annie(4.0) Janna(1.6) Shen(1.3) Orianna(1.3) Morgana(1.3) Evelynn(1.2)
+
+Topic 17: Nidalee(5.9) Lee Sin(5.7) Rek'Sai(5.7) Irelia(3.6) Ahri(2.8) Gnar(2.6) Gragas(2.6) Fizz(2.5) Hecarim(2.3) Jarvan IV(2.0)
+
+Topic 18: Graves(9.2) Kalista(7.4) Lucian(6.2) Vayne(5.3) Jinx(5.2) Sivir(4.8) Tristana(4.3) Corki(3.5) Irelia(3.4) Caitlyn(2.8)
+
+Topic 19: Tryndamere(7.3) Ahri(5.5) Thresh(5.3) LeBlanc(3.6) Vayne(3.5) Lee Sin(3.2) Azir(3.0) Annie(2.7) Nidalee(2.2) Viktor(2.2)
+
+
+
+
+number of iterations: 100000 name: test_gensim_masters number of topics: 20
+
+Topic 0: Twisted Fate(7.0) Ahri(6.6) Vel'Koz(6.6) Rek'Sai(5.0) Thresh(3.0) Nidalee(2.4) Lee Sin(2.4) Lucian(2.4) Gragas(2.3) Corki(2.1)
+
+Topic 1: Rek'Sai(8.1) Rengar(6.5) Aatrox(6.5) Vayne(5.4) Thresh(3.0) Shen(3.0) Renekton(2.7) Jarvan IV(2.7) Hecarim(2.5) Irelia(2.3)
+
+Topic 2: Janna(4.7) Ahri(3.4) Thresh(3.3) Rengar(3.1) Blitzcrank(3.1) Maokai(3.0) Morgana(2.4) Irelia(2.3) Lulu(2.3) Lee Sin(2.2)
+
+Topic 3: Gangplank(8.5) Cassiopeia(6.3) Evelynn(5.2) Fiddlesticks(5.0) Syndra(4.6) Sivir(4.4) Orianna(3.6) Janna(3.3) Lissandra(2.6) Azir(2.5)
+
+Topic 4: Katarina(51.0) Vayne(5.8) Irelia(4.9) Lux(4.3) Draven(2.3) Evelynn(2.1) Zed(1.9) Thresh(1.8) Lee Sin(1.5) Janna(1.4)
+
+Topic 5: Lee Sin(13.4) Nidalee(7.6) Rek'Sai(3.7) Rumble(3.2) Gnar(3.0) Gragas(2.9) Pantheon(2.4) Jarvan IV(2.3) Irelia(2.2) Nautilus(1.8)
+
+Topic 6: Rek'Sai(14.8) Gragas(6.5) Vi(3.5) Lee Sin(3.2) Nidalee(3.1) Jarvan IV(2.8) Sejuani(2.6) Evelynn(2.3) Graves(2.3) Zed(2.2)
+
+Topic 7: Talon(8.8) Kha'Zix(4.9) Kayle(3.0) Maokai(2.7) Quinn(2.7) Diana(2.6) Kog'Maw(2.5) Fizz(2.4) Jax(2.3) Cho'Gath(2.3)
+
+Topic 8: Vayne(8.4) Graves(6.6) Lucian(6.3) Kalista(4.4) Tristana(3.8) Sivir(3.7) Jinx(2.9) Corki(2.7) Thresh(2.6) Caitlyn(1.8)
+
+Topic 9: Lee Sin(5.2) Irelia(4.8) Gnar(4.6) Thresh(2.8) Riven(2.7) Nidalee(2.6) Hecarim(2.6) Vladimir(2.2) Rengar(2.2) Graves(2.2)
+
+Topic 10: Rek'Sai(13.9) Lee Sin(9.9) Nidalee(9.3) Elise(5.1) Gragas(5.0) Evelynn(4.0) Jarvan IV(3.7) Rengar(2.5) Ekko(2.4) Sejuani(2.3)
+
+Topic 11: Kayle(20.7) Vayne(8.2) Soraka(3.3) Tristana(3.0) Nidalee(3.0) Sion(2.9) Jinx(2.8) Kalista(2.7) Heimerdinger(2.3) Janna(2.2)
+
+Topic 12: Yasuo(11.7) Ahri(5.6) Zed(5.4) LeBlanc(4.1) Azir(3.2) Rengar(3.1) Viktor(2.6) Riven(2.6) Twisted Fate(2.6) Cassiopeia(1.9)
+
+Topic 13: Hecarim(5.8) Riven(3.6) Janna(3.4) Rek'Sai(3.3) Fiddlesticks(3.2) Thresh(3.1) Rengar(2.6) Maokai(2.6) Nidalee(2.3) Irelia(2.3)
+
+Topic 14: Kalista(7.5) Graves(5.1) Ahri(4.8) Lucian(4.7) Jinx(4.1) Vayne(3.6) Sivir(3.6) Corki(3.0) LeBlanc(2.8) Tristana(2.7)
+
+Topic 15: Annie(13.1) Katarina(9.0) Yasuo(4.5) Soraka(4.3) Janna(3.3) Leona(2.7) Nidalee(2.7) Lee Sin(2.6) Rek'Sai(2.2) Warwick(2.2)
+
+Topic 16: Mordekaiser(10.6) Viktor(7.5) Zac(5.3) Fizz(4.6) Lee Sin(4.2) Vel'Koz(3.7) Ahri(3.5) Azir(3.1) Gragas(3.0) Vi(2.4)
+
+Topic 17: Riven(21.6) Irelia(6.4) Rumble(3.5) Gnar(3.2) Sion(3.2) Veigar(3.2) Thresh(2.8) Anivia(2.0) Hecarim(1.8) Maokai(1.8)
+
+Topic 18: Thresh(15.5) Janna(6.4) Alistar(4.5) Morgana(4.1) Braum(3.8) Nautilus(3.7) Graves(3.3) Bard(3.0) Jinx(2.5) Blitzcrank(2.4)
+
+Topic 19: Twisted Fate(4.9) Tryndamere(4.7) Viktor(4.1) Azir(3.2) Ahri(2.9) Irelia(2.6) Zed(2.3) Vayne(2.3) LeBlanc(2.2) Graves(2.2)
+
+
+
+
+number of iterations: 999999 name: test_gensim_masters number of topics: 20
+
+Topic 0: Yasuo(10.2) Ahri(6.3) Kayle(6.1) Viktor(5.7) LeBlanc(4.5) Azir(3.7) Zed(3.4) Orianna(3.1) Twisted Fate(2.2) Syndra(1.9)
+
+Topic 1: Jinx(4.0) Thresh(3.9) Kalista(3.8) Sivir(3.8) Lucian(3.3) Zed(3.1) Ahri(2.9) Caitlyn(2.7) Vladimir(2.6) Aatrox(2.5)
+
+Topic 2: Thresh(9.0) Braum(4.6) Janna(4.5) Graves(4.1) Nautilus(3.1) Lulu(3.1) Morgana(2.9) Alistar(2.7) Vladimir(2.6) Vayne(2.4)
+
+Topic 3: Lee Sin(10.3) Rek'Sai(6.8) Thresh(4.7) Nidalee(3.6) Gragas(3.4) Ahri(3.1) Jarvan IV(3.0) Janna(2.9) Vayne(2.6) Vi(2.3)
+
+Topic 4: Tryndamere(9.9) Yasuo(8.0) Alistar(5.2) Twisted Fate(3.2) Ahri(2.9) Morgana(2.6) Volibear(2.4) Fizz(2.3) Nautilus(2.2) LeBlanc(1.9)
+
+Topic 5: Ryze(7.9) Blitzcrank(7.1) Leona(5.0) Gnar(4.8) Fizz(3.8) Rumble(3.6) Nautilus(3.4) Tahm Kench(3.3) Shen(3.2) Cho'Gath(2.6)
+
+Topic 6: Brand(17.3) Aatrox(7.2) Rek'Sai(4.2) Hecarim(4.1) Yasuo(3.5) Blitzcrank(2.9) Vi(2.5) Ahri(2.2) Rengar(2.1) Quinn(2.0)
+
+Topic 7: Katarina(7.0) Rek'Sai(5.8) Janna(2.9) Evelynn(2.9) Gragas(2.8) Maokai(2.7) Jarvan IV(2.3) Lee Sin(2.3) Ezreal(2.1) Zed(2.0)
+
+Topic 8: Thresh(15.0) Janna(5.9) Rengar(5.4) Alistar(4.3) Morgana(4.1) Nautilus(3.6) Bard(3.2) Braum(2.9) Annie(2.9) Blitzcrank(2.5)
+
+Topic 9: Akali(5.3) Talon(4.1) Ahri(4.0) Azir(3.9) Lulu(3.3) Annie(3.2) Cassiopeia(3.2) Veigar(2.8) Viktor(2.5) Vladimir(2.2)
+
+Topic 10: Graves(6.5) Lucian(5.7) Tryndamere(4.0) Thresh(3.9) Shaco(3.7) Draven(3.6) Fizz(2.9) Blitzcrank(2.8) Corki(2.3) LeBlanc(2.3)
+
+Topic 11: Kalista(5.9) Lee Sin(5.7) Sivir(4.1) Graves(4.0) Lucian(2.4) Tristana(2.4) Rek'Sai(2.1) Thresh(2.1) Corki(2.0) Irelia(2.0)
+
+Topic 12: Vayne(5.3) Graves(4.3) Gnar(3.7) Sivir(3.7) Lucian(3.4) Ahri(3.3) Kalista(2.9) Corki(2.6) Jinx(2.5) Ezreal(2.4)
+
+Topic 13: Irelia(16.7) Gnar(6.6) Fizz(3.7) Maokai(3.6) Lulu(3.4) Janna(2.9) Hecarim(2.6) Rumble(2.2) Morgana(2.1) Riven(2.0)
+
+Topic 14: Kalista(13.1) Graves(8.4) Vayne(8.0) Lucian(6.6) Sivir(6.4) Jinx(5.9) Kog'Maw(3.9) Ashe(3.9) Corki(3.1) Tristana(3.1)
+
+Topic 15: Nidalee(10.2) Riven(8.1) Rek'Sai(6.0) Lee Sin(4.6) Rengar(3.1) Elise(2.9) Gragas(2.8) Graves(2.1) Fizz(2.0) Ekko(2.0)
+
+Topic 16: Zed(10.7) Sion(6.6) Azir(6.6) Lulu(4.6) LeBlanc(3.9) Ahri(3.2) Vi(2.9) Viktor(2.7) Yasuo(2.3) Talon(2.3)
+
+Topic 17: Ahri(6.3) Lee Sin(4.5) Yasuo(4.4) Rek'Sai(4.0) Twisted Fate(3.9) Azir(3.6) Zed(3.6) LeBlanc(3.3) Viktor(2.7) Riven(2.6)
+
+Topic 18: Irelia(4.4) Rumble(3.9) Blitzcrank(3.9) Jax(3.8) Gnar(3.5) Thresh(3.2) Viktor(3.0) Hecarim(2.7) Janna(2.5) Fizz(2.2)
+
+Topic 19: Kalista(8.2) Graves(7.1) Lucian(7.0) Jinx(5.6) Tristana(4.8) Sivir(4.6) Corki(4.5) Vayne(4.0) Irelia(2.5) Rumble(2.3)
+
+
+
+number of iterations: 999999 name: test_gensim_masters number of topics: 5
+
+Topic 0: Rengar(4.8) Rek'Sai(3.5) Irelia(3.2) Kalista(3.0) Hecarim(2.7) Lucian(2.7) Graves(2.5) Lee Sin(2.4) Maokai(2.2) Janna(2.1)
+
+Topic 1: Lee Sin(4.5) Rek'Sai(4.2) Nidalee(4.2) Thresh(3.5) Irelia(3.5) Gnar(3.2) Fizz(2.3) Gragas(2.3) Yasuo(2.2) Ahri(1.9)
+
+Topic 2: Thresh(6.1) Graves(4.8) Kalista(3.7) Sivir(3.3) Rek'Sai(3.3) Lucian(3.1) Janna(2.4) Lee Sin(2.3) Corki(2.3) Jinx(2.2)
+
+Topic 3: Lee Sin(6.0) Riven(5.0) Lucian(3.9) Kalista(3.8) Vayne(3.7) Jinx(2.9) Yasuo(2.9) Nidalee(2.9) Graves(2.9) Thresh(2.7)
+
+Topic 4: Thresh(5.7) Ahri(4.7) Vayne(3.7) Janna(3.4) Graves(3.2) Zed(2.8) Lucian(2.5) Jinx(2.5) Morgana(2.3) Kalista(2.2)
+
+
+
+
+number of iterations: 999999 name: test_gensim_masters number of topics: 5
+
+Topic 0: Riven(5.8) Vayne(4.6) Graves(4.4) Jinx(3.8) Lucian(3.7) Lee Sin(2.7) Kalista(2.6) Sivir(2.6) Corki(2.3) Nidalee(2.3)
+
+Topic 1: Irelia(4.9) Gnar(4.2) Yasuo(4.1) Rek'Sai(3.8) Lee Sin(3.7) Thresh(3.1) Fizz(2.8) Janna(2.4) Hecarim(2.3) Alistar(2.0)
+
+Topic 2: Lee Sin(5.6) Azir(3.7) Irelia(3.6) Gnar(3.6) Maokai(3.3) Ahri(3.1) LeBlanc(2.9) Nidalee(2.2) Twisted Fate(2.0) Zed(2.0)
+
+Topic 3: Thresh(6.7) Kalista(3.7) Graves(3.5) Lee Sin(3.3) Lucian(3.1) Nidalee(2.9) Janna(2.8) Ahri(2.8) Rek'Sai(2.7) Sivir(2.5)
+
+Topic 4: Rengar(6.5) Ahri(5.2) Katarina(3.1) Orianna(2.8) Rek'Sai(2.7) Viktor(2.3) Azir(2.3) Zed(2.2) LeBlanc(2.2) Fiddlesticks(1.8)
+
+
+
+
+number of iterations: 100 name: test_gensim_masters number of topics: 5
+
+Topic 0: Ahri(4.0) Irelia(3.8) Lee Sin(3.6) Graves(3.2) Gnar(2.9) Jinx(2.3) Lucian(2.3) LeBlanc(2.1) Zed(2.1) Riven(2.0)
+
+Topic 1: Thresh(9.2) Ahri(4.3) Janna(2.8) Morgana(2.7) Viktor(2.7) Zed(2.7) Azir(2.6) Alistar(2.4) LeBlanc(2.4) Nautilus(2.3)
+
+Topic 2: Vayne(4.7) Graves(4.4) Janna(3.8) Lucian(3.7) Riven(3.0) Lee Sin(3.0) Thresh(2.8) Kalista(2.8) Sivir(2.4) Irelia(2.1)
+
+Topic 3: Yasuo(7.4) Thresh(5.8) Lee Sin(3.6) Alistar(3.6) Janna(3.2) Gnar(2.5) Riven(2.5) Kayle(2.2) Viktor(2.1) Azir(2.1)
+
+Topic 4: Rek'Sai(6.0) Nidalee(5.0) Lee Sin(4.6) Kalista(4.1) Graves(2.9) Gragas(2.9) Rengar(2.7) Sivir(2.6) Lucian(2.6) Thresh(2.5)
+
+
+
+
+number of iterations: 100 name: test_gensim_masters number of topics: 5
+
+Topic 0: Gnar(4.7) Hecarim(3.3) Graves(3.2) Irelia(3.2) Fizz(2.8) Rengar(2.4) Thresh(2.3) Zed(2.2) Vayne(2.1) Rek'Sai(2.0)
+
+Topic 1: Rek'Sai(6.6) Nidalee(3.4) Irelia(3.1) Gragas(3.0) Thresh(3.0) Ahri(2.6) Vayne(2.6) Lee Sin(2.2) Lucian(2.0) Gnar(2.0)
+
+Topic 2: Ahri(4.6) Twisted Fate(4.5) Azir(3.9) Viktor(3.5) LeBlanc(3.3) Riven(3.1) Lulu(2.9) Zed(2.8) Katarina(2.6) Yasuo(2.5)
+
+Topic 3: Riven(4.6) Graves(4.1) Yasuo(3.8) Lucian(2.9) Irelia(2.8) Blitzcrank(2.7) Kalista(2.5) Vladimir(2.3) Thresh(2.0) Gnar(2.0)
+
+Topic 4: Thresh(6.9) Lee Sin(5.5) Kalista(3.9) Graves(3.7) Janna(3.4) Lucian(3.1) Nidalee(2.9) Jinx(2.8) Rek'Sai(2.4) Vayne(2.3)
+
+
+
